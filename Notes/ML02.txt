@@ -1,0 +1,37 @@
+######################Basic Concepts:
+
+Machine Learning: Machine learning is a subset of artificial intelligence that focuses on creating algorithms that can learn from data without being explicitly programmed.
+
+Supervised Learning: Supervised learning is a type of machine learning where the algorithm learns from labeled data to make predictions or decisions.
+
+Unsupervised Learning: Unsupervised learning is a type of machine learning where the algorithm learns from unlabeled data to identify patterns and relationships.
+
+Reinforcement Learning: Reinforcement learning is a type of machine learning where the algorithm learns by interacting with the environment and receiving feedback in the form of rewards or penalties.
+
+Overfitting: Overfitting occurs when a machine learning model is too complex and captures noise in the training data, leading to poor performance on new data.
+
+Underfitting: Underfitting occurs when a machine learning model is too simple and fails to capture the underlying patterns in the data, leading to poor performance on both the training and new data.
+
+#######################Basic Terminologies:
+
+Dataset: A dataset is a collection of data used for training and testing machine learning models.
+
+Features: Features are the input variables used to make predictions or decisions in a machine learning model.
+
+Labels: Labels are the output variables that the machine learning model is trying to predict.
+
+Training Data: Training data is the data used to train the machine learning model.
+
+Test Data: Test data is the data used to evaluate the performance of the machine learning model.
+
+Model: A model is a mathematical representation of the relationship between the features and labels in a machine learning problem.
+
+Accuracy: Accuracy is the measure of how well a machine learning model is able to predict the correct output.
+
+Loss Function: A loss function is a mathematical function used to measure the difference between the predicted output and the actual output in a machine learning model.
+
+Optimization Algorithm: An optimization algorithm is an algorithm used to minimize the loss function in a machine learning model.
+
+Validation Data: Validation data is the data used to evaluate the performance of the machine learning model during the training process.
+
+Understanding these basic concepts and terminologies is essential to learning machine learning. It provides a foundation for understanding how machine learning models work and how they can be applied to solve real-world problems.

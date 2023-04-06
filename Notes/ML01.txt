@@ -1,0 +1,25 @@
+# Machine learning class 001
+
+To be grounded in supervised machine learning using Python, you should cover the following topics:
+
+1. Introduction to Machine Learning: Get familiar with the basic concepts and terminologies used in machine learning.
+
+2. Python Fundamentals: Understand the basics of programming in Python, including variables, data types, functions, loops, and control statements.
+
+3. NumPy and Pandas: Learn how to use NumPy and Pandas libraries for data manipulation and analysis.
+
+4. Data Preprocessing: Understand how to clean, transform, and normalize the dataset before feeding it into the machine learning model.
+
+5. Exploratory Data Analysis: Learn how to explore the data using statistical techniques and visualization tools to identify patterns and relationships.
+
+6. Supervised Learning Algorithms: Understand various supervised learning algorithms, including regression, classification, and decision trees.
+
+7. Model Evaluation and Selection: Learn how to evaluate and compare different machine learning models based on their performance metrics.
+
+8. Hyperparameter Tuning: Learn how to fine-tune the model's hyperparameters to improve its performance.
+
+9. Ensemble Learning: Understand how to combine multiple machine learning models to improve prediction accuracy.
+
+10. Deployment: Learn how to deploy the trained model into production and integrate it with the existing system.
+
+# By covering these topics, you can build a solid foundation in supervised machine learning using Python.
