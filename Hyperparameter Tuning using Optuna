@@ -3,21 +3,21 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "1f14b0ca",
+   "id": "045183bb",
    "metadata": {
     "_cell_guid": "b1076dfc-b9ad-4769-8c92-a6c4dae69d19",
     "_uuid": "8f2839f25d086af736a60e9eeb907d3b93b6e0e5",
     "execution": {
-     "iopub.execute_input": "2025-07-28T18:24:34.694009Z",
-     "iopub.status.busy": "2025-07-28T18:24:34.693743Z",
-     "iopub.status.idle": "2025-07-28T18:25:45.911845Z",
-     "shell.execute_reply": "2025-07-28T18:25:45.911117Z"
+     "iopub.execute_input": "2025-07-28T18:49:30.119412Z",
+     "iopub.status.busy": "2025-07-28T18:49:30.119125Z",
+     "iopub.status.idle": "2025-07-28T18:50:42.246713Z",
+     "shell.execute_reply": "2025-07-28T18:50:42.245738Z"
     },
     "papermill": {
-     "duration": 71.22358,
-     "end_time": "2025-07-28T18:25:45.913508",
+     "duration": 72.13325,
+     "end_time": "2025-07-28T18:50:42.248501",
      "exception": false,
-     "start_time": "2025-07-28T18:24:34.689928",
+     "start_time": "2025-07-28T18:49:30.115251",
      "status": "completed"
     },
     "tags": []
@@ -28,15 +28,15 @@
      "output_type": "stream",
      "text": [
       "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m363.4/363.4 MB\u001b[0m \u001b[31m4.7 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m13.8/13.8 MB\u001b[0m \u001b[31m106.4 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m24.6/24.6 MB\u001b[0m \u001b[31m80.2 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m883.7/883.7 kB\u001b[0m \u001b[31m44.1 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m13.8/13.8 MB\u001b[0m \u001b[31m99.1 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m24.6/24.6 MB\u001b[0m \u001b[31m78.4 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m883.7/883.7 kB\u001b[0m \u001b[31m42.7 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
       "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m664.8/664.8 MB\u001b[0m \u001b[31m2.2 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m211.5/211.5 MB\u001b[0m \u001b[31m5.0 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m56.3/56.3 MB\u001b[0m \u001b[31m3.2 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m127.9/127.9 MB\u001b[0m \u001b[31m9.3 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m207.5/207.5 MB\u001b[0m \u001b[31m8.2 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m21.1/21.1 MB\u001b[0m \u001b[31m81.3 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m211.5/211.5 MB\u001b[0m \u001b[31m6.7 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m56.3/56.3 MB\u001b[0m \u001b[31m3.1 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m127.9/127.9 MB\u001b[0m \u001b[31m7.1 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m207.5/207.5 MB\u001b[0m \u001b[31m8.0 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m21.1/21.1 MB\u001b[0m \u001b[31m61.4 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
       "\u001b[?25h"
      ]
     }
@@ -47,13 +47,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "27348144",
+   "id": "27a9965d",
    "metadata": {
     "papermill": {
-     "duration": 0.020221,
-     "end_time": "2025-07-28T18:25:45.955480",
+     "duration": 0.020852,
+     "end_time": "2025-07-28T18:50:42.292330",
      "exception": false,
-     "start_time": "2025-07-28T18:25:45.935259",
+     "start_time": "2025-07-28T18:50:42.271478",
      "status": "completed"
     },
     "tags": []
@@ -65,19 +65,19 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "7a7cbe06",
+   "id": "07c7acd4",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2025-07-28T18:25:45.995633Z",
-     "iopub.status.busy": "2025-07-28T18:25:45.995405Z",
-     "iopub.status.idle": "2025-07-28T18:25:46.002093Z",
-     "shell.execute_reply": "2025-07-28T18:25:46.001560Z"
+     "iopub.execute_input": "2025-07-28T18:50:42.334679Z",
+     "iopub.status.busy": "2025-07-28T18:50:42.334442Z",
+     "iopub.status.idle": "2025-07-28T18:50:42.341725Z",
+     "shell.execute_reply": "2025-07-28T18:50:42.341118Z"
     },
     "papermill": {
-     "duration": 0.028077,
-     "end_time": "2025-07-28T18:25:46.003048",
+     "duration": 0.03067,
+     "end_time": "2025-07-28T18:50:42.342976",
      "exception": false,
-     "start_time": "2025-07-28T18:25:45.974971",
+     "start_time": "2025-07-28T18:50:42.312306",
      "status": "completed"
     },
     "tags": []
@@ -157,13 +157,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "86e2dbbb",
+   "id": "bc09480a",
    "metadata": {
     "papermill": {
-     "duration": 0.019113,
-     "end_time": "2025-07-28T18:25:46.041623",
+     "duration": 0.020379,
+     "end_time": "2025-07-28T18:50:42.383475",
      "exception": false,
-     "start_time": "2025-07-28T18:25:46.022510",
+     "start_time": "2025-07-28T18:50:42.363096",
      "status": "completed"
     },
     "tags": []
@@ -175,19 +175,19 @@
   {
    "cell_type": "code",
    "execution_count": 3,
-   "id": "b48bda80",
+   "id": "55eb916a",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2025-07-28T18:25:46.081363Z",
-     "iopub.status.busy": "2025-07-28T18:25:46.081167Z",
-     "iopub.status.idle": "2025-07-28T18:25:54.880023Z",
-     "shell.execute_reply": "2025-07-28T18:25:54.879256Z"
+     "iopub.execute_input": "2025-07-28T18:50:42.424792Z",
+     "iopub.status.busy": "2025-07-28T18:50:42.424579Z",
+     "iopub.status.idle": "2025-07-28T18:50:51.475513Z",
+     "shell.execute_reply": "2025-07-28T18:50:51.474689Z"
     },
     "papermill": {
-     "duration": 8.820499,
-     "end_time": "2025-07-28T18:25:54.881413",
+     "duration": 9.073394,
+     "end_time": "2025-07-28T18:50:51.477181",
      "exception": false,
-     "start_time": "2025-07-28T18:25:46.060914",
+     "start_time": "2025-07-28T18:50:42.403787",
      "status": "completed"
     },
     "tags": []
@@ -337,13 +337,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "37c21525",
+   "id": "54f00d9a",
    "metadata": {
     "papermill": {
-     "duration": 0.019155,
-     "end_time": "2025-07-28T18:25:54.920694",
+     "duration": 0.019648,
+     "end_time": "2025-07-28T18:50:51.517726",
      "exception": false,
-     "start_time": "2025-07-28T18:25:54.901539",
+     "start_time": "2025-07-28T18:50:51.498078",
      "status": "completed"
     },
     "tags": []
@@ -355,19 +355,19 @@
   {
    "cell_type": "code",
    "execution_count": 4,
-   "id": "5a1642be",
+   "id": "8ab66f3e",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2025-07-28T18:25:54.960792Z",
-     "iopub.status.busy": "2025-07-28T18:25:54.960481Z",
-     "iopub.status.idle": "2025-07-28T18:26:10.410412Z",
-     "shell.execute_reply": "2025-07-28T18:26:10.409773Z"
+     "iopub.execute_input": "2025-07-28T18:50:51.559017Z",
+     "iopub.status.busy": "2025-07-28T18:50:51.558662Z",
+     "iopub.status.idle": "2025-07-28T18:51:07.131121Z",
+     "shell.execute_reply": "2025-07-28T18:51:07.130287Z"
     },
     "papermill": {
-     "duration": 15.471704,
-     "end_time": "2025-07-28T18:26:10.411750",
+     "duration": 15.594866,
+     "end_time": "2025-07-28T18:51:07.132608",
      "exception": false,
-     "start_time": "2025-07-28T18:25:54.940046",
+     "start_time": "2025-07-28T18:50:51.537742",
      "status": "completed"
     },
     "tags": []
@@ -377,10 +377,10 @@
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "2025-07-28 18:25:56.889056: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered\n",
+      "2025-07-28 18:50:53.700414: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered\n",
       "WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n",
-      "E0000 00:00:1753727157.066837      19 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered\n",
-      "E0000 00:00:1753727157.121755      19 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered\n"
+      "E0000 00:00:1753728653.904455      19 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered\n",
+      "E0000 00:00:1753728653.967200      19 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered\n"
      ]
     }
    ],
@@ -416,6 +416,31 @@
     "    print(f\"[INFO] Using default learning rate: {Config.LEARNING_RATE}\")\n",
     "    return Config.LEARNING_RATE\n",
     "\n",
+    "def get_best_hyperparameters():\n",
+    "    \"\"\"Load best hyperparameters from tuning stage\"\"\"\n",
+    "    best_params_path = os.path.join(Config.OUTPUT_DIR, \"best_hyperparameters.json\")\n",
+    "    if os.path.exists(best_params_path):\n",
+    "        try:\n",
+    "            import json\n",
+    "            with open(best_params_path, \"r\") as f:\n",
+    "                params = json.load(f)\n",
+    "            print(f\"[INFO] Using best hyperparameters from tuning:\")\n",
+    "            for key, value in params.items():\n",
+    "                print(f\"  {key}: {value}\")\n",
+    "            return params\n",
+    "        except Exception as e:\n",
+    "            print(f\"[WARN] Could not read best hyperparameters: {e}. Using defaults.\")\n",
+    "    \n",
+    "    # Return default parameters\n",
+    "    default_params = {\n",
+    "        'learning_rate': Config.LEARNING_RATE,\n",
+    "        'batch_size': Config.BATCH_SIZE,\n",
+    "        'weight_decay': Config.WEIGHT_DECAY,\n",
+    "        'scheduler_step_size': Config.SCHEDULER_STEP_SIZE\n",
+    "    }\n",
+    "    print(f\"[INFO] Using default hyperparameters\")\n",
+    "    return default_params\n",
+    "\n",
     "class FaceRecognitionModel(nn.Module):\n",
     "    \"\"\"\n",
     "    Simple face recognition model for classifying Davido vs Unknown\n",
@@ -446,17 +471,23 @@
     "        self.val_loader = val_loader\n",
     "        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')\n",
     "        self.model.to(self.device)\n",
-    "        learning_rate = get_best_learning_rate()\n",
+    "        \n",
+    "        # Load best hyperparameters\n",
+    "        best_params = get_best_hyperparameters()\n",
+    "        \n",
+    "        # Initialize optimizer and scheduler with best parameters\n",
     "        self.optimizer = optim.AdamW(\n",
     "            self.model.parameters(),\n",
-    "            lr=learning_rate,\n",
-    "            weight_decay=Config.WEIGHT_DECAY\n",
+    "            lr=best_params['learning_rate'],\n",
+    "            weight_decay=best_params['weight_decay']\n",
     "        )\n",
+    "        \n",
     "        self.scheduler = optim.lr_scheduler.StepLR(\n",
     "            self.optimizer,\n",
-    "            step_size=Config.SCHEDULER_STEP_SIZE,\n",
+    "            step_size=best_params['scheduler_step_size'],\n",
     "            gamma=Config.SCHEDULER_GAMMA\n",
     "        )\n",
+    "        \n",
     "        self.criterion = nn.CrossEntropyLoss()\n",
     "        self.writer = SummaryWriter(Config.LOGS_DIR)\n",
     "        self.train_losses = []\n",
@@ -465,49 +496,72 @@
     "        print(f\"Model initialized on device: {self.device}\")\n",
     "        print(f\"Total parameters: {sum(p.numel() for p in self.model.parameters()):,}\")\n",
     "    def train_epoch(self, epoch):\n",
+    "        \"\"\"Train for one epoch\"\"\"\n",
     "        self.model.train()\n",
-    "        total_loss = 0\n",
+    "        total_loss = 0.0\n",
     "        num_batches = 0\n",
-    "        progress_bar = tqdm(self.train_loader, desc=f'Epoch {epoch+1}/{Config.EPOCHS}')\n",
-    "        for batch_idx, batch in enumerate(progress_bar):\n",
-    "            images = batch['image'].to(self.device)\n",
-    "            labels = batch['label'].to(self.device)\n",
+    "        \n",
+    "        # Check if train_loader is empty\n",
+    "        if len(self.train_loader) == 0:\n",
+    "            print(\"[ERROR] Training loader is empty!\")\n",
+    "            return 0.0\n",
+    "        \n",
+    "        for batch_idx, (images, labels) in enumerate(self.train_loader):\n",
+    "            images = images.to(self.device)\n",
+    "            labels = labels.to(self.device)\n",
+    "            \n",
     "            self.optimizer.zero_grad()\n",
-    "            logits = self.model(images)\n",
-    "            loss = self.criterion(logits, labels)\n",
+    "            outputs = self.model(images)\n",
+    "            loss = self.criterion(outputs, labels)\n",
     "            loss.backward()\n",
-    "            torch.nn.utils.clip_grad_norm_(self.model.parameters(), max_norm=1.0)\n",
     "            self.optimizer.step()\n",
+    "            \n",
     "            total_loss += loss.item()\n",
     "            num_batches += 1\n",
-    "            progress_bar.set_postfix({'Loss': f'{loss.item():.4f}'})\n",
+    "            \n",
     "            if batch_idx % 10 == 0:\n",
     "                self.writer.add_scalar('Train/Loss', loss.item(), epoch * len(self.train_loader) + batch_idx)\n",
+    "        \n",
+    "        # Prevent division by zero\n",
+    "        if num_batches == 0:\n",
+    "            print(\"[ERROR] No batches processed in training epoch!\")\n",
+    "            return 0.0\n",
+    "            \n",
     "        avg_loss = total_loss / num_batches\n",
     "        self.train_losses.append(avg_loss)\n",
     "        return avg_loss\n",
     "    def validate_epoch(self, epoch):\n",
+    "        \"\"\"Validate for one epoch\"\"\"\n",
     "        self.model.eval()\n",
-    "        total_loss = 0\n",
+    "        total_loss = 0.0\n",
     "        num_batches = 0\n",
-    "        correct = 0\n",
-    "        total = 0\n",
+    "        \n",
+    "        # Check if val_loader is empty\n",
+    "        if len(self.val_loader) == 0:\n",
+    "            print(\"[ERROR] Validation loader is empty!\")\n",
+    "            return 0.0\n",
+    "        \n",
     "        with torch.no_grad():\n",
-    "            for batch in tqdm(self.val_loader, desc='Validation'):\n",
-    "                images = batch['image'].to(self.device)\n",
-    "                labels = batch['label'].to(self.device)\n",
-    "                logits = self.model(images)\n",
-    "                loss = self.criterion(logits, labels)\n",
+    "            for batch_idx, (images, labels) in enumerate(self.val_loader):\n",
+    "                images = images.to(self.device)\n",
+    "                labels = labels.to(self.device)\n",
+    "                \n",
+    "                outputs = self.model(images)\n",
+    "                loss = self.criterion(outputs, labels)\n",
+    "                \n",
     "                total_loss += loss.item()\n",
     "                num_batches += 1\n",
-    "                preds = torch.argmax(logits, dim=1)\n",
-    "                correct += (preds == labels).sum().item()\n",
-    "                total += labels.size(0)\n",
+    "                \n",
+    "                if batch_idx % 10 == 0:\n",
+    "                    self.writer.add_scalar('Val/Loss', loss.item(), epoch * len(self.val_loader) + batch_idx)\n",
+    "        \n",
+    "        # Prevent division by zero\n",
+    "        if num_batches == 0:\n",
+    "            print(\"[ERROR] No batches processed in validation epoch!\")\n",
+    "            return 0.0\n",
+    "            \n",
     "        avg_loss = total_loss / num_batches\n",
-    "        acc = correct / total if total > 0 else 0\n",
     "        self.val_losses.append(avg_loss)\n",
-    "        self.writer.add_scalar('Val/Loss', avg_loss, epoch)\n",
-    "        self.writer.add_scalar('Val/Accuracy', acc, epoch)\n",
     "        return avg_loss\n",
     "    def save_checkpoint(self, epoch, is_best=False):\n",
     "        checkpoint = {\n",
@@ -583,13 +637,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "edd5ad12",
+   "id": "567c6b07",
    "metadata": {
     "papermill": {
-     "duration": 0.064896,
-     "end_time": "2025-07-28T18:26:10.497979",
+     "duration": 0.06893,
+     "end_time": "2025-07-28T18:51:07.222187",
      "exception": false,
-     "start_time": "2025-07-28T18:26:10.433083",
+     "start_time": "2025-07-28T18:51:07.153257",
      "status": "completed"
     },
     "tags": []
@@ -601,19 +655,19 @@
   {
    "cell_type": "code",
    "execution_count": 5,
-   "id": "4ee6eb1c",
+   "id": "a1695adc",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2025-07-28T18:26:10.538840Z",
-     "iopub.status.busy": "2025-07-28T18:26:10.538298Z",
-     "iopub.status.idle": "2025-07-28T18:26:21.258911Z",
-     "shell.execute_reply": "2025-07-28T18:26:21.258144Z"
+     "iopub.execute_input": "2025-07-28T18:51:07.264276Z",
+     "iopub.status.busy": "2025-07-28T18:51:07.263724Z",
+     "iopub.status.idle": "2025-07-28T18:51:16.666585Z",
+     "shell.execute_reply": "2025-07-28T18:51:16.665709Z"
     },
     "papermill": {
-     "duration": 10.742622,
-     "end_time": "2025-07-28T18:26:21.260144",
+     "duration": 9.425435,
+     "end_time": "2025-07-28T18:51:16.667941",
      "exception": false,
-     "start_time": "2025-07-28T18:26:10.517522",
+     "start_time": "2025-07-28T18:51:07.242506",
      "status": "completed"
     },
     "tags": []
@@ -623,14 +677,72 @@
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "[I 2025-07-28 18:26:10,854] A new study created in memory with name: lr_tuning\n"
+      "[I 2025-07-28 18:51:07,608] A new study created in memory with name: hyperparameter_tuning\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "=== Hyperparameter Tuning: Learning Rate (Optuna) ===\n",
+      "=== Hyperparameter Tuning: Multiple Parameters (Optuna) ===\n",
+      "Testing data loading...\n",
+      "Created data loaders:\n",
+      "  Training: 1 batches\n",
+      "  Validation: 1 batches\n",
+      "Data loading test successful:\n",
+      "  Training batches: 1\n",
+      "  Validation batches: 1\n",
+      "Created data loaders:\n",
+      "  Training: 2 batches\n",
+      "  Validation: 1 batches\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "/usr/local/lib/python3.11/dist-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.\n",
+      "  warnings.warn(\n",
+      "/usr/local/lib/python3.11/dist-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=MobileNet_V2_Weights.IMAGENET1K_V1`. You can also use `weights=MobileNet_V2_Weights.DEFAULT` to get the most up-to-date weights.\n",
+      "  warnings.warn(msg)\n",
+      "Downloading: \"https://download.pytorch.org/models/mobilenet_v2-b0353104.pth\" to /root/.cache/torch/hub/checkpoints/mobilenet_v2-b0353104.pth\n",
+      "100%|██████████| 13.6M/13.6M [00:00<00:00, 173MB/s]\n",
+      "[I 2025-07-28 18:51:08,832] Trial 0 finished with value: inf and parameters: {'learning_rate': 7.006441826812678e-05, 'batch_size': 8, 'weight_decay': 0.0008989548671361929, 'scheduler_step_size': 10}. Best is trial 0 with value: inf.\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[INFO] Using default hyperparameters\n",
+      "Model initialized on device: cuda\n",
+      "Total parameters: 2,225,153\n",
+      "[ERROR] Training failed: too many values to unpack (expected 2)\n",
+      "Created data loaders:\n",
+      "  Training: 2 batches\n",
+      "  Validation: 1 batches\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "[I 2025-07-28 18:51:09,461] Trial 1 finished with value: inf and parameters: {'learning_rate': 1.4376650069756454e-05, 'batch_size': 8, 'weight_decay': 4.356403960278676e-06, 'scheduler_step_size': 7}. Best is trial 0 with value: inf.\n",
+      "[I 2025-07-28 18:51:09,465] Trial 2 finished with value: inf and parameters: {'learning_rate': 3.205416938047233e-05, 'batch_size': 32, 'weight_decay': 2.2011273220563376e-06, 'scheduler_step_size': 8}. Best is trial 0 with value: inf.\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[INFO] Using default hyperparameters\n",
+      "Model initialized on device: cuda\n",
+      "Total parameters: 2,225,153\n",
+      "[ERROR] Training failed: too many values to unpack (expected 2)\n",
+      "Created data loaders:\n",
+      "  Training: 0 batches\n",
+      "  Validation: 1 batches\n",
+      "[ERROR] Training loader is empty. Skipping trial.\n",
       "Created data loaders:\n",
       "  Training: 1 batches\n",
       "  Validation: 1 batches\n"
@@ -640,259 +752,227 @@
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "/tmp/ipykernel_19/2816815780.py:15: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.\n",
-      "  learning_rate = trial.suggest_loguniform('learning_rate', 1e-5, 1e-2)\n",
-      "/usr/local/lib/python3.11/dist-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.\n",
-      "  warnings.warn(\n",
-      "/usr/local/lib/python3.11/dist-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=MobileNet_V2_Weights.IMAGENET1K_V1`. You can also use `weights=MobileNet_V2_Weights.DEFAULT` to get the most up-to-date weights.\n",
-      "  warnings.warn(msg)\n",
-      "Downloading: \"https://download.pytorch.org/models/mobilenet_v2-b0353104.pth\" to /root/.cache/torch/hub/checkpoints/mobilenet_v2-b0353104.pth\n",
-      "100%|██████████| 13.6M/13.6M [00:00<00:00, 156MB/s]\n"
+      "[I 2025-07-28 18:51:10,242] Trial 3 finished with value: inf and parameters: {'learning_rate': 0.007709835280977405, 'batch_size': 16, 'weight_decay': 8.814434940285069e-06, 'scheduler_step_size': 14}. Best is trial 0 with value: inf.\n",
+      "[I 2025-07-28 18:51:10,246] Trial 4 finished with value: inf and parameters: {'learning_rate': 1.5682754820846882e-05, 'batch_size': 32, 'weight_decay': 8.554350982271782e-05, 'scheduler_step_size': 17}. Best is trial 0 with value: inf.\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "[INFO] Using default learning rate: 0.001\n",
+      "[INFO] Using default hyperparameters\n",
       "Model initialized on device: cuda\n",
-      "Total parameters: 2,225,153\n"
+      "Total parameters: 2,225,153\n",
+      "[ERROR] Training failed: too many values to unpack (expected 2)\n",
+      "Created data loaders:\n",
+      "  Training: 0 batches\n",
+      "  Validation: 1 batches\n",
+      "[ERROR] Training loader is empty. Skipping trial.\n",
+      "Created data loaders:\n",
+      "  Training: 2 batches\n",
+      "  Validation: 1 batches\n"
      ]
     },
     {
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "Epoch 1/50: 100%|██████████| 1/1 [00:00<00:00,  1.37it/s, Loss=0.0000]\n",
-      "Validation: 100%|██████████| 1/1 [00:00<00:00, 21.15it/s]\n",
-      "Epoch 2/50: 100%|██████████| 1/1 [00:00<00:00, 28.63it/s, Loss=0.0000]\n",
-      "Validation: 100%|██████████| 1/1 [00:00<00:00, 164.61it/s]\n",
-      "[I 2025-07-28 18:26:13,124] Trial 0 finished with value: 0.0 and parameters: {'learning_rate': 3.7576650651914184e-05}. Best is trial 0 with value: 0.0.\n"
+      "[I 2025-07-28 18:51:10,931] Trial 5 finished with value: inf and parameters: {'learning_rate': 5.3374349534262015e-05, 'batch_size': 8, 'weight_decay': 1.6957100986833656e-05, 'scheduler_step_size': 15}. Best is trial 0 with value: inf.\n",
+      "[I 2025-07-28 18:51:10,934] Trial 6 finished with value: inf and parameters: {'learning_rate': 0.0005712042123966359, 'batch_size': 32, 'weight_decay': 7.3625973135527e-05, 'scheduler_step_size': 9}. Best is trial 0 with value: inf.\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
+      "[INFO] Using default hyperparameters\n",
+      "Model initialized on device: cuda\n",
+      "Total parameters: 2,225,153\n",
+      "[ERROR] Training failed: too many values to unpack (expected 2)\n",
+      "Created data loaders:\n",
+      "  Training: 0 batches\n",
+      "  Validation: 1 batches\n",
+      "[ERROR] Training loader is empty. Skipping trial.\n",
       "Created data loaders:\n",
       "  Training: 1 batches\n",
-      "  Validation: 1 batches\n",
-      "[INFO] Using default learning rate: 0.001\n",
-      "Model initialized on device: cuda\n",
-      "Total parameters: 2,225,153\n"
+      "  Validation: 1 batches\n"
      ]
     },
     {
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "Epoch 1/50: 100%|██████████| 1/1 [00:00<00:00, 27.27it/s, Loss=0.0000]\n",
-      "Validation: 100%|██████████| 1/1 [00:00<00:00, 151.79it/s]\n",
-      "Epoch 2/50: 100%|██████████| 1/1 [00:00<00:00, 30.56it/s, Loss=0.0000]\n",
-      "Validation: 100%|██████████| 1/1 [00:00<00:00, 151.70it/s]\n",
-      "[I 2025-07-28 18:26:14,021] Trial 1 finished with value: 0.0 and parameters: {'learning_rate': 1.1924861725984841e-05}. Best is trial 0 with value: 0.0.\n"
+      "[I 2025-07-28 18:51:11,683] Trial 7 finished with value: inf and parameters: {'learning_rate': 0.00016478615352543552, 'batch_size': 16, 'weight_decay': 3.562885975336179e-06, 'scheduler_step_size': 10}. Best is trial 0 with value: inf.\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
+      "[INFO] Using default hyperparameters\n",
+      "Model initialized on device: cuda\n",
+      "Total parameters: 2,225,153\n",
+      "[ERROR] Training failed: too many values to unpack (expected 2)\n",
       "Created data loaders:\n",
-      "  Training: 1 batches\n",
-      "  Validation: 1 batches\n",
-      "[INFO] Using default learning rate: 0.001\n",
-      "Model initialized on device: cuda\n",
-      "Total parameters: 2,225,153\n"
+      "  Training: 2 batches\n",
+      "  Validation: 1 batches\n"
      ]
     },
     {
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "Epoch 1/50: 100%|██████████| 1/1 [00:00<00:00, 27.62it/s, Loss=0.0000]\n",
-      "Validation: 100%|██████████| 1/1 [00:00<00:00, 148.17it/s]\n",
-      "Epoch 2/50: 100%|██████████| 1/1 [00:00<00:00, 30.87it/s, Loss=0.0000]\n",
-      "Validation: 100%|██████████| 1/1 [00:00<00:00, 165.55it/s]\n",
-      "[I 2025-07-28 18:26:14,917] Trial 2 finished with value: 0.0 and parameters: {'learning_rate': 5.3059060758522855e-05}. Best is trial 0 with value: 0.0.\n"
+      "[I 2025-07-28 18:51:12,444] Trial 8 finished with value: inf and parameters: {'learning_rate': 0.007316893532822938, 'batch_size': 8, 'weight_decay': 1.959576737455094e-05, 'scheduler_step_size': 7}. Best is trial 0 with value: inf.\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
+      "[INFO] Using default hyperparameters\n",
+      "Model initialized on device: cuda\n",
+      "Total parameters: 2,225,153\n",
+      "[ERROR] Training failed: too many values to unpack (expected 2)\n",
       "Created data loaders:\n",
-      "  Training: 1 batches\n",
-      "  Validation: 1 batches\n",
-      "[INFO] Using default learning rate: 0.001\n",
-      "Model initialized on device: cuda\n",
-      "Total parameters: 2,225,153\n"
+      "  Training: 2 batches\n",
+      "  Validation: 1 batches\n"
      ]
     },
     {
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "Epoch 1/50: 100%|██████████| 1/1 [00:00<00:00, 26.63it/s, Loss=0.0000]\n",
-      "Validation: 100%|██████████| 1/1 [00:00<00:00, 137.37it/s]\n",
-      "Epoch 2/50: 100%|██████████| 1/1 [00:00<00:00, 29.12it/s, Loss=0.0000]\n",
-      "Validation: 100%|██████████| 1/1 [00:00<00:00, 134.74it/s]\n",
-      "[I 2025-07-28 18:26:15,815] Trial 3 finished with value: 0.0 and parameters: {'learning_rate': 0.0011896276278862874}. Best is trial 0 with value: 0.0.\n"
+      "[I 2025-07-28 18:51:13,186] Trial 9 finished with value: inf and parameters: {'learning_rate': 0.0006903621207372433, 'batch_size': 8, 'weight_decay': 8.919602727594447e-05, 'scheduler_step_size': 5}. Best is trial 0 with value: inf.\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
+      "[INFO] Using default hyperparameters\n",
+      "Model initialized on device: cuda\n",
+      "Total parameters: 2,225,153\n",
+      "[ERROR] Training failed: too many values to unpack (expected 2)\n",
       "Created data loaders:\n",
-      "  Training: 1 batches\n",
-      "  Validation: 1 batches\n",
-      "[INFO] Using default learning rate: 0.001\n",
-      "Model initialized on device: cuda\n",
-      "Total parameters: 2,225,153\n"
+      "  Training: 2 batches\n",
+      "  Validation: 1 batches\n"
      ]
     },
     {
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "Epoch 1/50: 100%|██████████| 1/1 [00:00<00:00, 26.54it/s, Loss=0.0000]\n",
-      "Validation: 100%|██████████| 1/1 [00:00<00:00, 142.28it/s]\n",
-      "Epoch 2/50: 100%|██████████| 1/1 [00:00<00:00, 30.11it/s, Loss=0.0000]\n",
-      "Validation: 100%|██████████| 1/1 [00:00<00:00, 109.16it/s]\n",
-      "[I 2025-07-28 18:26:16,784] Trial 4 finished with value: 0.0 and parameters: {'learning_rate': 0.00820319346287274}. Best is trial 0 with value: 0.0.\n"
+      "[I 2025-07-28 18:51:13,919] Trial 10 finished with value: inf and parameters: {'learning_rate': 0.00014895346753201124, 'batch_size': 8, 'weight_decay': 0.0006391192155282626, 'scheduler_step_size': 20}. Best is trial 0 with value: inf.\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
+      "[INFO] Using default hyperparameters\n",
+      "Model initialized on device: cuda\n",
+      "Total parameters: 2,225,153\n",
+      "[ERROR] Training failed: too many values to unpack (expected 2)\n",
       "Created data loaders:\n",
-      "  Training: 1 batches\n",
-      "  Validation: 1 batches\n",
-      "[INFO] Using default learning rate: 0.001\n",
-      "Model initialized on device: cuda\n",
-      "Total parameters: 2,225,153\n"
+      "  Training: 2 batches\n",
+      "  Validation: 1 batches\n"
      ]
     },
     {
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "Epoch 1/50: 100%|██████████| 1/1 [00:00<00:00, 27.20it/s, Loss=0.0000]\n",
-      "Validation: 100%|██████████| 1/1 [00:00<00:00, 138.56it/s]\n",
-      "Epoch 2/50: 100%|██████████| 1/1 [00:00<00:00, 30.98it/s, Loss=0.0000]\n",
-      "Validation: 100%|██████████| 1/1 [00:00<00:00, 158.71it/s]\n",
-      "[I 2025-07-28 18:26:17,703] Trial 5 finished with value: 0.0 and parameters: {'learning_rate': 0.0003473020930116697}. Best is trial 0 with value: 0.0.\n"
+      "[I 2025-07-28 18:51:14,646] Trial 11 finished with value: inf and parameters: {'learning_rate': 1.0023044567810627e-05, 'batch_size': 8, 'weight_decay': 0.0008936924495621944, 'scheduler_step_size': 11}. Best is trial 0 with value: inf.\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
+      "[INFO] Using default hyperparameters\n",
+      "Model initialized on device: cuda\n",
+      "Total parameters: 2,225,153\n",
+      "[ERROR] Training failed: too many values to unpack (expected 2)\n",
       "Created data loaders:\n",
-      "  Training: 1 batches\n",
-      "  Validation: 1 batches\n",
-      "[INFO] Using default learning rate: 0.001\n",
-      "Model initialized on device: cuda\n",
-      "Total parameters: 2,225,153\n"
+      "  Training: 2 batches\n",
+      "  Validation: 1 batches\n"
      ]
     },
     {
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "Epoch 1/50: 100%|██████████| 1/1 [00:00<00:00, 27.42it/s, Loss=0.0000]\n",
-      "Validation: 100%|██████████| 1/1 [00:00<00:00, 125.30it/s]\n",
-      "Epoch 2/50: 100%|██████████| 1/1 [00:00<00:00, 30.72it/s, Loss=0.0000]\n",
-      "Validation: 100%|██████████| 1/1 [00:00<00:00, 173.85it/s]\n",
-      "[I 2025-07-28 18:26:18,577] Trial 6 finished with value: 0.0 and parameters: {'learning_rate': 0.0007492424519608716}. Best is trial 0 with value: 0.0.\n"
+      "[I 2025-07-28 18:51:15,315] Trial 12 finished with value: inf and parameters: {'learning_rate': 5.787871854454201e-05, 'batch_size': 8, 'weight_decay': 0.00021203904989519352, 'scheduler_step_size': 5}. Best is trial 0 with value: inf.\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
+      "[INFO] Using default hyperparameters\n",
+      "Model initialized on device: cuda\n",
+      "Total parameters: 2,225,153\n",
+      "[ERROR] Training failed: too many values to unpack (expected 2)\n",
       "Created data loaders:\n",
-      "  Training: 1 batches\n",
-      "  Validation: 1 batches\n",
-      "[INFO] Using default learning rate: 0.001\n",
-      "Model initialized on device: cuda\n",
-      "Total parameters: 2,225,153\n"
+      "  Training: 2 batches\n",
+      "  Validation: 1 batches\n"
      ]
     },
     {
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "Epoch 1/50: 100%|██████████| 1/1 [00:00<00:00, 26.97it/s, Loss=0.0000]\n",
-      "Validation: 100%|██████████| 1/1 [00:00<00:00, 148.47it/s]\n",
-      "Epoch 2/50: 100%|██████████| 1/1 [00:00<00:00, 30.38it/s, Loss=0.0000]\n",
-      "Validation: 100%|██████████| 1/1 [00:00<00:00, 163.50it/s]\n",
-      "[I 2025-07-28 18:26:19,458] Trial 7 finished with value: 0.0 and parameters: {'learning_rate': 0.002517905243702451}. Best is trial 0 with value: 0.0.\n"
+      "[I 2025-07-28 18:51:15,975] Trial 13 finished with value: inf and parameters: {'learning_rate': 2.939965609506624e-05, 'batch_size': 8, 'weight_decay': 1.1380857324172142e-06, 'scheduler_step_size': 12}. Best is trial 0 with value: inf.\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
+      "[INFO] Using default hyperparameters\n",
+      "Model initialized on device: cuda\n",
+      "Total parameters: 2,225,153\n",
+      "[ERROR] Training failed: too many values to unpack (expected 2)\n",
       "Created data loaders:\n",
-      "  Training: 1 batches\n",
-      "  Validation: 1 batches\n",
-      "[INFO] Using default learning rate: 0.001\n",
-      "Model initialized on device: cuda\n",
-      "Total parameters: 2,225,153\n"
+      "  Training: 2 batches\n",
+      "  Validation: 1 batches\n"
      ]
     },
     {
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "Epoch 1/50: 100%|██████████| 1/1 [00:00<00:00, 27.29it/s, Loss=0.0000]\n",
-      "Validation: 100%|██████████| 1/1 [00:00<00:00, 147.38it/s]\n",
-      "Epoch 2/50: 100%|██████████| 1/1 [00:00<00:00, 30.85it/s, Loss=0.0000]\n",
-      "Validation: 100%|██████████| 1/1 [00:00<00:00, 158.97it/s]\n",
-      "[I 2025-07-28 18:26:20,368] Trial 8 finished with value: 0.0 and parameters: {'learning_rate': 7.125952812584628e-05}. Best is trial 0 with value: 0.0.\n"
+      "[I 2025-07-28 18:51:16,660] Trial 14 finished with value: inf and parameters: {'learning_rate': 0.00013385002101543974, 'batch_size': 8, 'weight_decay': 6.502908091275857e-06, 'scheduler_step_size': 7}. Best is trial 0 with value: inf.\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Created data loaders:\n",
-      "  Training: 1 batches\n",
-      "  Validation: 1 batches\n",
-      "[INFO] Using default learning rate: 0.001\n",
+      "[INFO] Using default hyperparameters\n",
       "Model initialized on device: cuda\n",
-      "Total parameters: 2,225,153\n"
-     ]
-    },
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "Epoch 1/50: 100%|██████████| 1/1 [00:00<00:00, 26.98it/s, Loss=0.0000]\n",
-      "Validation: 100%|██████████| 1/1 [00:00<00:00, 140.68it/s]\n",
-      "Epoch 2/50: 100%|██████████| 1/1 [00:00<00:00, 30.63it/s, Loss=0.0000]\n",
-      "Validation: 100%|██████████| 1/1 [00:00<00:00, 153.60it/s]\n",
-      "[I 2025-07-28 18:26:21,253] Trial 9 finished with value: 0.0 and parameters: {'learning_rate': 0.0003451996156021189}. Best is trial 0 with value: 0.0.\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Total parameters: 2,225,153\n",
+      "[ERROR] Training failed: too many values to unpack (expected 2)\n",
       "\n",
       "Best trial:\n",
-      "  Value: 0.0\n",
-      "  Params: {'learning_rate': 3.7576650651914184e-05}\n",
-      "Best learning rate saved to ./output/best_learning_rate.txt\n"
+      "  Value: inf\n",
+      "  Params: {'learning_rate': 7.006441826812678e-05, 'batch_size': 8, 'weight_decay': 0.0008989548671361929, 'scheduler_step_size': 10}\n",
+      "Best hyperparameters saved to ./output/best_hyperparameters.json\n",
+      "Best learning rate saved to ./output/best_learning_rate.txt\n",
+      "\n",
+      "Hyperparameter Tuning Summary:\n",
+      "  Best Learning Rate: 0.000070\n",
+      "  Best Batch Size: 8\n",
+      "  Best Weight Decay: 0.000899\n",
+      "  Best Scheduler Step Size: 10\n",
+      "  Best Validation Loss: inf\n"
      ]
     }
    ],
    "source": [
     "\"\"\"\n",
     "Hyperparameter Tuning Script for Facial Detection System\n",
-    "Uses Optuna to tune the learning rate before main training\n",
+    "Uses Optuna to tune multiple important hyperparameters\n",
     "\"\"\"\n",
     "\n",
     "import os\n",
@@ -903,11 +983,23 @@
     "# from model_training import FaceRecognitionModel, ModelTrainer\n",
     "\n",
     "def objective(trial):\n",
-    "    # Suggest a learning rate in log scale\n",
-    "    learning_rate = trial.suggest_loguniform('learning_rate', 1e-5, 1e-2)\n",
+    "    # Suggest multiple hyperparameters (using updated Optuna methods)\n",
+    "    learning_rate = trial.suggest_float('learning_rate', 1e-5, 1e-2, log=True)\n",
+    "    batch_size = trial.suggest_categorical('batch_size', [8, 16, 32])\n",
+    "    weight_decay = trial.suggest_float('weight_decay', 1e-6, 1e-3, log=True)\n",
+    "    scheduler_step_size = trial.suggest_int('scheduler_step_size', 5, 20)\n",
     "    \n",
-    "    # Load data loaders from saved splits\n",
-    "    train_loader, val_loader = create_data_loaders()\n",
+    "    # Load data loaders with custom batch size\n",
+    "    train_loader, val_loader = create_data_loaders(batch_size=batch_size)\n",
+    "    \n",
+    "    # Check if data loaders are empty\n",
+    "    if len(train_loader) == 0:\n",
+    "        print(f\"[ERROR] Training loader is empty. Skipping trial.\")\n",
+    "        return float('inf')  # Return worst possible value\n",
+    "    \n",
+    "    if len(val_loader) == 0:\n",
+    "        print(f\"[ERROR] Validation loader is empty. Skipping trial.\")\n",
+    "        return float('inf')\n",
     "    \n",
     "    # Use a smaller number of batches for tuning\n",
     "    train_loader_iter = iter(train_loader)\n",
@@ -918,45 +1010,86 @@
     "    # Initialize model\n",
     "    model = FaceRecognitionModel(num_classes=Config.NUM_CLASSES, pretrained=Config.PRETRAINED)\n",
     "    \n",
-    "    # Trainer with custom learning rate\n",
+    "    # Trainer with custom hyperparameters\n",
     "    trainer = ModelTrainer(model, train_loader, val_loader)\n",
     "    trainer.optimizer = torch.optim.AdamW(\n",
     "        model.parameters(),\n",
     "        lr=learning_rate,\n",
-    "        weight_decay=Config.WEIGHT_DECAY\n",
+    "        weight_decay=weight_decay\n",
+    "    )\n",
+    "    trainer.scheduler = torch.optim.lr_scheduler.StepLR(\n",
+    "        trainer.optimizer,\n",
+    "        step_size=scheduler_step_size,\n",
+    "        gamma=Config.SCHEDULER_GAMMA\n",
     "    )\n",
     "    \n",
     "    # Train for a few epochs only\n",
     "    best_val_loss = float('inf')\n",
-    "    for epoch in range(2):\n",
-    "        trainer.train_loader = small_train_loader\n",
-    "        trainer.val_loader = small_val_loader\n",
-    "        trainer.train_epoch(epoch)\n",
-    "        val_loss = trainer.validate_epoch(epoch)\n",
-    "        if val_loss < best_val_loss:\n",
-    "            best_val_loss = val_loss\n",
+    "    try:\n",
+    "        for epoch in range(2):\n",
+    "            trainer.train_loader = small_train_loader\n",
+    "            trainer.val_loader = small_val_loader\n",
+    "            train_loss = trainer.train_epoch(epoch)\n",
+    "            val_loss = trainer.validate_epoch(epoch)\n",
+    "            if val_loss < best_val_loss:\n",
+    "                best_val_loss = val_loss\n",
+    "    except Exception as e:\n",
+    "        print(f\"[ERROR] Training failed: {e}\")\n",
+    "        return float('inf')\n",
     "    \n",
     "    return best_val_loss\n",
     "\n",
     "def main():\n",
-    "    print(\"=== Hyperparameter Tuning: Learning Rate (Optuna) ===\")\n",
+    "    print(\"=== Hyperparameter Tuning: Multiple Parameters (Optuna) ===\")\n",
     "    \n",
     "    # Create output directory if it doesn't exist\n",
     "    os.makedirs(Config.OUTPUT_DIR, exist_ok=True)\n",
     "    \n",
-    "    study = optuna.create_study(direction=\"minimize\", study_name=\"lr_tuning\")\n",
-    "    study.optimize(objective, n_trials=10)\n",
+    "    # Test data loading first\n",
+    "    print(\"Testing data loading...\")\n",
+    "    try:\n",
+    "        test_train_loader, test_val_loader = create_data_loaders(batch_size=16)\n",
+    "        print(f\"Data loading test successful:\")\n",
+    "        print(f\"  Training batches: {len(test_train_loader)}\")\n",
+    "        print(f\"  Validation batches: {len(test_val_loader)}\")\n",
+    "        \n",
+    "        if len(test_train_loader) == 0:\n",
+    "            print(\"[ERROR] No training data found. Please check your dataset.\")\n",
+    "            return\n",
+    "            \n",
+    "    except Exception as e:\n",
+    "        print(f\"[ERROR] Data loading failed: {e}\")\n",
+    "        return\n",
+    "    \n",
+    "    study = optuna.create_study(direction=\"minimize\", study_name=\"hyperparameter_tuning\")\n",
+    "    study.optimize(objective, n_trials=15)  # Increased trials for multiple parameters\n",
     "    \n",
     "    print(\"\\nBest trial:\")\n",
     "    trial = study.best_trial\n",
     "    print(f\"  Value: {trial.value}\")\n",
     "    print(f\"  Params: {trial.params}\")\n",
     "    \n",
-    "    # Save best learning rate to file\n",
+    "    # Save best hyperparameters to file\n",
+    "    best_params_path = os.path.join(Config.OUTPUT_DIR, \"best_hyperparameters.json\")\n",
+    "    import json\n",
+    "    with open(best_params_path, \"w\") as f:\n",
+    "        json.dump(trial.params, f, indent=2)\n",
+    "    \n",
+    "    # Also save individual parameters for backward compatibility\n",
     "    best_lr_path = os.path.join(Config.OUTPUT_DIR, \"best_learning_rate.txt\")\n",
     "    with open(best_lr_path, \"w\") as f:\n",
     "        f.write(str(trial.params['learning_rate']))\n",
+    "    \n",
+    "    print(f\"Best hyperparameters saved to {best_params_path}\")\n",
     "    print(f\"Best learning rate saved to {best_lr_path}\")\n",
+    "    \n",
+    "    # Print summary\n",
+    "    print(\"\\nHyperparameter Tuning Summary:\")\n",
+    "    print(f\"  Best Learning Rate: {trial.params['learning_rate']:.6f}\")\n",
+    "    print(f\"  Best Batch Size: {trial.params['batch_size']}\")\n",
+    "    print(f\"  Best Weight Decay: {trial.params['weight_decay']:.6f}\")\n",
+    "    print(f\"  Best Scheduler Step Size: {trial.params['scheduler_step_size']}\")\n",
+    "    print(f\"  Best Validation Loss: {trial.value:.4f}\")\n",
     "\n",
     "if __name__ == \"__main__\":\n",
     "    main() "
@@ -1001,14 +1134,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 114.215516,
-   "end_time": "2025-07-28T18:26:24.878155",
+   "duration": 114.249036,
+   "end_time": "2025-07-28T18:51:20.248387",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2025-07-28T18:24:30.662639",
+   "start_time": "2025-07-28T18:49:25.999351",
    "version": "2.6.0"
   }
  },
