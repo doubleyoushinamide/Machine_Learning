@@ -3,21 +3,21 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "30091ab5",
+   "id": "03e11640",
    "metadata": {
     "_cell_guid": "b1076dfc-b9ad-4769-8c92-a6c4dae69d19",
     "_uuid": "8f2839f25d086af736a60e9eeb907d3b93b6e0e5",
     "execution": {
-     "iopub.execute_input": "2025-07-28T17:34:09.811747Z",
-     "iopub.status.busy": "2025-07-28T17:34:09.811006Z",
-     "iopub.status.idle": "2025-07-28T17:35:23.722363Z",
-     "shell.execute_reply": "2025-07-28T17:35:23.721267Z"
+     "iopub.execute_input": "2025-07-28T19:24:44.417783Z",
+     "iopub.status.busy": "2025-07-28T19:24:44.417504Z",
+     "iopub.status.idle": "2025-07-28T19:25:57.327314Z",
+     "shell.execute_reply": "2025-07-28T19:25:57.326317Z"
     },
     "papermill": {
-     "duration": 73.916297,
-     "end_time": "2025-07-28T17:35:23.724060",
+     "duration": 72.914177,
+     "end_time": "2025-07-28T19:25:57.329001",
      "exception": false,
-     "start_time": "2025-07-28T17:34:09.807763",
+     "start_time": "2025-07-28T19:24:44.414824",
      "status": "completed"
     },
     "tags": []
@@ -27,16 +27,16 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m363.4/363.4 MB\u001b[0m \u001b[31m4.7 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m13.8/13.8 MB\u001b[0m \u001b[31m100.0 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m24.6/24.6 MB\u001b[0m \u001b[31m70.4 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m883.7/883.7 kB\u001b[0m \u001b[31m42.8 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m664.8/664.8 MB\u001b[0m \u001b[31m2.4 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m211.5/211.5 MB\u001b[0m \u001b[31m2.2 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m56.3/56.3 MB\u001b[0m \u001b[31m8.8 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m127.9/127.9 MB\u001b[0m \u001b[31m13.2 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m207.5/207.5 MB\u001b[0m \u001b[31m8.0 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m21.1/21.1 MB\u001b[0m \u001b[31m78.4 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m363.4/363.4 MB\u001b[0m \u001b[31m4.8 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m13.8/13.8 MB\u001b[0m \u001b[31m85.9 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m24.6/24.6 MB\u001b[0m \u001b[31m73.6 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m883.7/883.7 kB\u001b[0m \u001b[31m44.8 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m664.8/664.8 MB\u001b[0m \u001b[31m2.3 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m211.5/211.5 MB\u001b[0m \u001b[31m2.0 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m56.3/56.3 MB\u001b[0m \u001b[31m15.7 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m127.9/127.9 MB\u001b[0m \u001b[31m13.0 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m207.5/207.5 MB\u001b[0m \u001b[31m7.6 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m21.1/21.1 MB\u001b[0m \u001b[31m47.2 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
       "\u001b[?25h"
      ]
     }
@@ -48,19 +48,19 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "96fe8fe6",
+   "id": "36b3c7ed",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2025-07-28T17:35:23.768672Z",
-     "iopub.status.busy": "2025-07-28T17:35:23.768393Z",
-     "iopub.status.idle": "2025-07-28T17:35:23.776236Z",
-     "shell.execute_reply": "2025-07-28T17:35:23.775538Z"
+     "iopub.execute_input": "2025-07-28T19:25:57.374059Z",
+     "iopub.status.busy": "2025-07-28T19:25:57.373786Z",
+     "iopub.status.idle": "2025-07-28T19:25:57.381109Z",
+     "shell.execute_reply": "2025-07-28T19:25:57.380399Z"
     },
     "papermill": {
-     "duration": 0.031048,
-     "end_time": "2025-07-28T17:35:23.777370",
+     "duration": 0.029637,
+     "end_time": "2025-07-28T19:25:57.382272",
      "exception": false,
-     "start_time": "2025-07-28T17:35:23.746322",
+     "start_time": "2025-07-28T19:25:57.352635",
      "status": "completed"
     },
     "tags": []
@@ -141,19 +141,19 @@
   {
    "cell_type": "code",
    "execution_count": 3,
-   "id": "91c6c396",
+   "id": "0dee001f",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2025-07-28T17:35:23.819476Z",
-     "iopub.status.busy": "2025-07-28T17:35:23.819203Z",
-     "iopub.status.idle": "2025-07-28T17:35:37.438185Z",
-     "shell.execute_reply": "2025-07-28T17:35:37.437293Z"
+     "iopub.execute_input": "2025-07-28T19:25:57.423746Z",
+     "iopub.status.busy": "2025-07-28T19:25:57.423509Z",
+     "iopub.status.idle": "2025-07-28T19:26:09.124997Z",
+     "shell.execute_reply": "2025-07-28T19:26:09.124003Z"
     },
     "papermill": {
-     "duration": 13.642187,
-     "end_time": "2025-07-28T17:35:37.439369",
+     "duration": 11.723657,
+     "end_time": "2025-07-28T19:26:09.126190",
      "exception": false,
-     "start_time": "2025-07-28T17:35:23.797182",
+     "start_time": "2025-07-28T19:25:57.402533",
      "status": "completed"
     },
     "tags": []
@@ -231,9 +231,24 @@
     "        return {'image': image, 'label': label_idx, 'image_path': img_path}\n",
     "\n",
     "def get_transforms():\n",
+    "    \"\"\"Comprehensive data augmentation for small datasets\"\"\"\n",
+    "    return transforms.Compose([\n",
+    "        transforms.Resize((Config.IMAGE_SIZE[0] + 20, Config.IMAGE_SIZE[1] + 20)),  # Slightly larger for cropping\n",
+    "        transforms.RandomCrop(Config.IMAGE_SIZE),  # Random crop\n",
+    "        transforms.RandomHorizontalFlip(p=0.5),  # Random horizontal flip\n",
+    "        transforms.RandomRotation(degrees=15),  # Random rotation\n",
+    "        transforms.ColorJitter(brightness=0.3, contrast=0.3, saturation=0.3, hue=0.1),  # Color augmentation\n",
+    "        transforms.RandomGrayscale(p=0.1),  # Random grayscale\n",
+    "        transforms.RandomAffine(degrees=0, translate=(0.1, 0.1), scale=(0.9, 1.1)),  # Affine transforms\n",
+    "        transforms.ToTensor(),\n",
+    "        transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5]),\n",
+    "        transforms.RandomErasing(p=0.2, scale=(0.02, 0.2)),  # Random erasing\n",
+    "    ])\n",
+    "\n",
+    "def get_val_transforms():\n",
+    "    \"\"\"Simple transforms for validation (no augmentation)\"\"\"\n",
     "    return transforms.Compose([\n",
     "        transforms.Resize(Config.IMAGE_SIZE),\n",
-    "        transforms.RandomHorizontalFlip(),\n",
     "        transforms.ToTensor(),\n",
     "        transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5]),\n",
     "    ])\n",
@@ -256,7 +271,7 @@
     "        val_dataset = FaceRecognitionDataset(\n",
     "            Config.DATA_DIR,\n",
     "            csv_file=csv_file,\n",
-    "            transform=get_transforms(),\n",
+    "            transform=get_val_transforms(),\n",
     "            split='val',\n",
     "            train_split=Config.TRAIN_SPLIT\n",
     "        )\n",
@@ -395,14 +410,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 94.364834,
-   "end_time": "2025-07-28T17:35:39.824756",
+   "duration": 90.145679,
+   "end_time": "2025-07-28T19:26:10.467893",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2025-07-28T17:34:05.459922",
+   "start_time": "2025-07-28T19:24:40.322214",
    "version": "2.6.0"
   }
  },
