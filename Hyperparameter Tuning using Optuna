@@ -1,0 +1,1017 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "1f14b0ca",
+   "metadata": {
+    "_cell_guid": "b1076dfc-b9ad-4769-8c92-a6c4dae69d19",
+    "_uuid": "8f2839f25d086af736a60e9eeb907d3b93b6e0e5",
+    "execution": {
+     "iopub.execute_input": "2025-07-28T18:24:34.694009Z",
+     "iopub.status.busy": "2025-07-28T18:24:34.693743Z",
+     "iopub.status.idle": "2025-07-28T18:25:45.911845Z",
+     "shell.execute_reply": "2025-07-28T18:25:45.911117Z"
+    },
+    "papermill": {
+     "duration": 71.22358,
+     "end_time": "2025-07-28T18:25:45.913508",
+     "exception": false,
+     "start_time": "2025-07-28T18:24:34.689928",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m363.4/363.4 MB\u001b[0m \u001b[31m4.7 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m13.8/13.8 MB\u001b[0m \u001b[31m106.4 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m24.6/24.6 MB\u001b[0m \u001b[31m80.2 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m883.7/883.7 kB\u001b[0m \u001b[31m44.1 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m664.8/664.8 MB\u001b[0m \u001b[31m2.2 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m211.5/211.5 MB\u001b[0m \u001b[31m5.0 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m56.3/56.3 MB\u001b[0m \u001b[31m3.2 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m127.9/127.9 MB\u001b[0m \u001b[31m9.3 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m207.5/207.5 MB\u001b[0m \u001b[31m8.2 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m21.1/21.1 MB\u001b[0m \u001b[31m81.3 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[?25h"
+     ]
+    }
+   ],
+   "source": [
+    "!pip install -q torch torchvision opencv-python numpy Pillow matplotlib albumentations tqdm  scikit-learn tensorboard optuna"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "27348144",
+   "metadata": {
+    "papermill": {
+     "duration": 0.020221,
+     "end_time": "2025-07-28T18:25:45.955480",
+     "exception": false,
+     "start_time": "2025-07-28T18:25:45.935259",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "## Config Class"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "7a7cbe06",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2025-07-28T18:25:45.995633Z",
+     "iopub.status.busy": "2025-07-28T18:25:45.995405Z",
+     "iopub.status.idle": "2025-07-28T18:25:46.002093Z",
+     "shell.execute_reply": "2025-07-28T18:25:46.001560Z"
+    },
+    "papermill": {
+     "duration": 0.028077,
+     "end_time": "2025-07-28T18:25:46.003048",
+     "exception": false,
+     "start_time": "2025-07-28T18:25:45.974971",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "\"\"\"\n",
+    "Configuration file for Facial Detection System\n",
+    "Optimized for Kaggle hardware constraints\n",
+    "\"\"\"\n",
+    "\n",
+    "import os\n",
+    "\n",
+    "class Config:\n",
+    "    # Hardware constraints for Kaggle\n",
+    "    GPU_MEMORY_LIMIT = 14  # GB (leaving 2GB buffer)\n",
+    "    RAM_LIMIT = 28  # GB (leaving 4GB buffer)\n",
+    "    CPU_CORES = 4\n",
+    "    \n",
+    "    # Dataset settings\n",
+    "    DATASET_NAME = \"davido-recognition\"  # Custom Davido recognition dataset\n",
+    "    TRAIN_SPLIT = 0.8\n",
+    "    VAL_SPLIT = 0.2\n",
+    "    IMAGE_SIZE = (160, 160)  # Standard for face recognition models (e.g., FaceNet)\n",
+    "    BATCH_SIZE = 16  # Optimized for P100 GPU memory\n",
+    "    DAVIDO_LABEL = \"Davido\"\n",
+    "    UNKNOWN_LABEL = \"Unknown\"\n",
+    "    CLASS_NAMES = [DAVIDO_LABEL, UNKNOWN_LABEL]\n",
+    "    NUM_CLASSES = 2\n",
+    "    \n",
+    "    # Data augmentation settings\n",
+    "    AUGMENTATION_PROBABILITY = 0.8\n",
+    "    ROTATION_RANGE = 15\n",
+    "    BRIGHTNESS_RANGE = 0.2\n",
+    "    CONTRAST_RANGE = 0.2\n",
+    "    HORIZONTAL_FLIP_PROB = 0.5\n",
+    "    VERTICAL_FLIP_PROB = 0.0  # Keep faces upright\n",
+    "    \n",
+    "    # Model settings\n",
+    "    MODEL_TYPE = \"mobilenet_v3\"  # Lightweight and efficient\n",
+    "    PRETRAINED = True\n",
+    "    NUM_CLASSES = 1  # Face detection only\n",
+    "    CONFIDENCE_THRESHOLD = 0.5\n",
+    "    NMS_THRESHOLD = 0.4\n",
+    "    \n",
+    "    # Training settings\n",
+    "    EPOCHS = 50\n",
+    "    LEARNING_RATE = 0.001\n",
+    "    WEIGHT_DECAY = 1e-4\n",
+    "    SCHEDULER_STEP_SIZE = 10\n",
+    "    SCHEDULER_GAMMA = 0.5\n",
+    "    \n",
+    "    # Real-time detection settings\n",
+    "    FPS_TARGET = 15  # Process every 4th frame at 60fps\n",
+    "    FRAME_SKIP = 4\n",
+    "    DETECTION_INTERVAL = 3  # frames between detections\n",
+    "    \n",
+    "    # Paths\n",
+    "    DATA_DIR = \"/kaggle/input/input-images-davido\"\n",
+    "    SCREENSHOT_DIR = \"./output/screenshots\"\n",
+    "    MODELS_DIR = \"./models\"\n",
+    "    LOGS_DIR = \"./logs\"\n",
+    "    OUTPUT_DIR = \"./output\"\n",
+    "    \n",
+    "    # Create directories\n",
+    "    @staticmethod\n",
+    "    def create_directories():\n",
+    "        \"\"\"Create necessary directories\"\"\"\n",
+    "        dirs = [Config.DATA_DIR, Config.MODELS_DIR, Config.LOGS_DIR, Config.OUTPUT_DIR, Config.SCREENSHOT_DIR]\n",
+    "        for dir_path in dirs:\n",
+    "            os.makedirs(dir_path, exist_ok=True)\n",
+    "    \n",
+    "    # Model export settings\n",
+    "    EXPORT_FORMAT = \"pt\"  # PyTorch format for local use\n",
+    "    MODEL_FILENAME = \"face_detection_model.pt\" "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "86e2dbbb",
+   "metadata": {
+    "papermill": {
+     "duration": 0.019113,
+     "end_time": "2025-07-28T18:25:46.041623",
+     "exception": false,
+     "start_time": "2025-07-28T18:25:46.022510",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "## Data Utility Class"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "b48bda80",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2025-07-28T18:25:46.081363Z",
+     "iopub.status.busy": "2025-07-28T18:25:46.081167Z",
+     "iopub.status.idle": "2025-07-28T18:25:54.880023Z",
+     "shell.execute_reply": "2025-07-28T18:25:54.879256Z"
+    },
+    "papermill": {
+     "duration": 8.820499,
+     "end_time": "2025-07-28T18:25:54.881413",
+     "exception": false,
+     "start_time": "2025-07-28T18:25:46.060914",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "\"\"\"\n",
+    "Utility functions to load dataset information saved by data_preparation.py\n",
+    "Used by hyperparameter tuning and training stages\n",
+    "\"\"\"\n",
+    "\n",
+    "import os\n",
+    "import pickle\n",
+    "import json\n",
+    "import torch\n",
+    "from torch.utils.data import Dataset, DataLoader\n",
+    "from torchvision import transforms\n",
+    "from PIL import Image\n",
+    "# from config import Config\n",
+    "\n",
+    "class FaceRecognitionDataset(Dataset):\n",
+    "    \"\"\"\n",
+    "    Custom dataset for face recognition (classification)\n",
+    "    Loads images and labels from saved splits\n",
+    "    \"\"\"\n",
+    "    def __init__(self, data_dir, samples, transform=None):\n",
+    "        self.data_dir = data_dir\n",
+    "        self.transform = transform\n",
+    "        self.samples = samples\n",
+    "        self.class_names = Config.CLASS_NAMES\n",
+    "    \n",
+    "    def __len__(self):\n",
+    "        return len(self.samples)\n",
+    "    \n",
+    "    def __getitem__(self, idx):\n",
+    "        fname, label = self.samples[idx]\n",
+    "        img_path = os.path.join(self.data_dir, fname)\n",
+    "        image = Image.open(img_path).convert('RGB')\n",
+    "        label_idx = self.class_names.index(label)\n",
+    "        if self.transform:\n",
+    "            image = self.transform(image)\n",
+    "        return {'image': image, 'label': label_idx, 'image_path': img_path}\n",
+    "\n",
+    "def get_transforms():\n",
+    "    \"\"\"Get the same transforms used in data preparation\"\"\"\n",
+    "    return transforms.Compose([\n",
+    "        transforms.Resize(Config.IMAGE_SIZE),\n",
+    "        transforms.RandomHorizontalFlip(),\n",
+    "        transforms.ToTensor(),\n",
+    "        transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5]),\n",
+    "    ])\n",
+    "\n",
+    "def load_dataset_info():\n",
+    "    \"\"\"Load dataset information saved by data_preparation.py\"\"\"\n",
+    "    # Updated path to match user's output directory\n",
+    "    info_path = os.path.join('/kaggle/input/fd-01-preprocessing/output', 'dataset_info.json')\n",
+    "    if not os.path.exists(info_path):\n",
+    "        raise FileNotFoundError(f\"Dataset info not found at {info_path}. Run data_preparation.py first.\")\n",
+    "    \n",
+    "    with open(info_path, 'r') as f:\n",
+    "        dataset_info = json.load(f)\n",
+    "    \n",
+    "    print(f\"Loaded dataset info:\")\n",
+    "    print(f\"  Total samples: {dataset_info['total_samples']}\")\n",
+    "    print(f\"  Classes: {dataset_info['class_names']}\")\n",
+    "    print(f\"  Class distribution: {dataset_info['class_distribution']}\")\n",
+    "    \n",
+    "    return dataset_info\n",
+    "\n",
+    "def load_dataset_splits():\n",
+    "    \"\"\"Load train/val splits saved by data_preparation.py\"\"\"\n",
+    "    # Updated path to match user's output directory\n",
+    "    splits_path = os.path.join('/kaggle/input/fd-01-preprocessing/output', 'dataset_splits.pkl')\n",
+    "    if not os.path.exists(splits_path):\n",
+    "        raise FileNotFoundError(f\"Dataset splits not found at {splits_path}. Run data_preparation.py first.\")\n",
+    "    \n",
+    "    with open(splits_path, 'rb') as f:\n",
+    "        splits_data = pickle.load(f)\n",
+    "    \n",
+    "    return splits_data['train_samples'], splits_data['val_samples'], splits_data['class_names']\n",
+    "\n",
+    "def create_data_loaders(batch_size=None, num_workers=None):\n",
+    "    \"\"\"Create train and validation data loaders from saved splits\"\"\"\n",
+    "    if batch_size is None:\n",
+    "        batch_size = Config.BATCH_SIZE\n",
+    "    if num_workers is None:\n",
+    "        num_workers = min(Config.CPU_CORES, 4)\n",
+    "    \n",
+    "    # Load saved splits\n",
+    "    train_samples, val_samples, class_names = load_dataset_splits()\n",
+    "    \n",
+    "    # Create datasets\n",
+    "    train_dataset = FaceRecognitionDataset(\n",
+    "        Config.DATA_DIR,\n",
+    "        train_samples,\n",
+    "        transform=get_transforms()\n",
+    "    )\n",
+    "    \n",
+    "    val_dataset = FaceRecognitionDataset(\n",
+    "        Config.DATA_DIR,\n",
+    "        val_samples,\n",
+    "        transform=get_transforms()\n",
+    "    )\n",
+    "    \n",
+    "    # Create data loaders\n",
+    "    train_loader = DataLoader(\n",
+    "        train_dataset,\n",
+    "        batch_size=batch_size,\n",
+    "        shuffle=True,\n",
+    "        num_workers=num_workers,\n",
+    "        pin_memory=True,\n",
+    "        drop_last=True\n",
+    "    )\n",
+    "    \n",
+    "    val_loader = DataLoader(\n",
+    "        val_dataset,\n",
+    "        batch_size=batch_size,\n",
+    "        shuffle=False,\n",
+    "        num_workers=num_workers,\n",
+    "        pin_memory=True\n",
+    "    )\n",
+    "    \n",
+    "    print(f\"Created data loaders:\")\n",
+    "    print(f\"  Training: {len(train_loader)} batches\")\n",
+    "    print(f\"  Validation: {len(val_loader)} batches\")\n",
+    "    \n",
+    "    return train_loader, val_loader\n",
+    "\n",
+    "def test_data_loading():\n",
+    "    \"\"\"Test function to verify data loading works\"\"\"\n",
+    "    try:\n",
+    "        dataset_info = load_dataset_info()\n",
+    "        train_loader, val_loader = create_data_loaders()\n",
+    "        \n",
+    "        # Test a batch\n",
+    "        for batch in train_loader:\n",
+    "            print(f\"Test batch shape: {batch['image'].shape}\")\n",
+    "            print(f\"Test batch labels: {batch['label']}\")\n",
+    "            break\n",
+    "        \n",
+    "        print(\"✓ Data loading test successful!\")\n",
+    "        return True\n",
+    "    except Exception as e:\n",
+    "        print(f\"✗ Data loading test failed: {e}\")\n",
+    "        return False"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "37c21525",
+   "metadata": {
+    "papermill": {
+     "duration": 0.019155,
+     "end_time": "2025-07-28T18:25:54.920694",
+     "exception": false,
+     "start_time": "2025-07-28T18:25:54.901539",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "## Model Training Class"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "5a1642be",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2025-07-28T18:25:54.960792Z",
+     "iopub.status.busy": "2025-07-28T18:25:54.960481Z",
+     "iopub.status.idle": "2025-07-28T18:26:10.410412Z",
+     "shell.execute_reply": "2025-07-28T18:26:10.409773Z"
+    },
+    "papermill": {
+     "duration": 15.471704,
+     "end_time": "2025-07-28T18:26:10.411750",
+     "exception": false,
+     "start_time": "2025-07-28T18:25:54.940046",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "2025-07-28 18:25:56.889056: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered\n",
+      "WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n",
+      "E0000 00:00:1753727157.066837      19 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered\n",
+      "E0000 00:00:1753727157.121755      19 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered\n"
+     ]
+    }
+   ],
+   "source": [
+    "\"\"\"\n",
+    "Section 2: Model Selection and Training\n",
+    "Lightweight face detection model optimized for real-time processing on Kaggle hardware\n",
+    "\"\"\"\n",
+    "\n",
+    "import os\n",
+    "import torch\n",
+    "import torch.nn as nn\n",
+    "import torch.optim as optim\n",
+    "from torch.utils.tensorboard import SummaryWriter\n",
+    "import torchvision.models as models\n",
+    "from tqdm import tqdm\n",
+    "import matplotlib.pyplot as plt\n",
+    "import time\n",
+    "# from config import Config\n",
+    "# from data_loader_utils import create_data_loaders\n",
+    "\n",
+    "# Utility function to load best learning rate if available\n",
+    "def get_best_learning_rate():\n",
+    "    best_lr_path = os.path.join(Config.OUTPUT_DIR, \"best_learning_rate.txt\")\n",
+    "    if os.path.exists(best_lr_path):\n",
+    "        try:\n",
+    "            with open(best_lr_path, \"r\") as f:\n",
+    "                lr = float(f.read().strip())\n",
+    "                print(f\"[INFO] Using best learning rate from tuning: {lr}\")\n",
+    "                return lr\n",
+    "        except Exception as e:\n",
+    "            print(f\"[WARN] Could not read best learning rate: {e}. Using default.\")\n",
+    "    print(f\"[INFO] Using default learning rate: {Config.LEARNING_RATE}\")\n",
+    "    return Config.LEARNING_RATE\n",
+    "\n",
+    "class FaceRecognitionModel(nn.Module):\n",
+    "    \"\"\"\n",
+    "    Simple face recognition model for classifying Davido vs Unknown\n",
+    "    Uses MobileNetV2 backbone with a classification head\n",
+    "    \"\"\"\n",
+    "    def __init__(self, num_classes=2, pretrained=True):\n",
+    "        super().__init__()\n",
+    "        self.backbone = models.mobilenet_v2(pretrained=pretrained).features\n",
+    "        self.pool = nn.AdaptiveAvgPool2d((1, 1))\n",
+    "        self.classifier = nn.Sequential(\n",
+    "            nn.Dropout(0.2),\n",
+    "            nn.Linear(1280, num_classes)\n",
+    "        )\n",
+    "    def forward(self, x):\n",
+    "        x = self.backbone(x)\n",
+    "        x = self.pool(x)\n",
+    "        x = x.view(x.size(0), -1)\n",
+    "        x = self.classifier(x)\n",
+    "        return x\n",
+    "\n",
+    "class ModelTrainer:\n",
+    "    \"\"\"\n",
+    "    Handles model training for face recognition (classification)\n",
+    "    \"\"\"\n",
+    "    def __init__(self, model, train_loader, val_loader):\n",
+    "        self.model = model\n",
+    "        self.train_loader = train_loader\n",
+    "        self.val_loader = val_loader\n",
+    "        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')\n",
+    "        self.model.to(self.device)\n",
+    "        learning_rate = get_best_learning_rate()\n",
+    "        self.optimizer = optim.AdamW(\n",
+    "            self.model.parameters(),\n",
+    "            lr=learning_rate,\n",
+    "            weight_decay=Config.WEIGHT_DECAY\n",
+    "        )\n",
+    "        self.scheduler = optim.lr_scheduler.StepLR(\n",
+    "            self.optimizer,\n",
+    "            step_size=Config.SCHEDULER_STEP_SIZE,\n",
+    "            gamma=Config.SCHEDULER_GAMMA\n",
+    "        )\n",
+    "        self.criterion = nn.CrossEntropyLoss()\n",
+    "        self.writer = SummaryWriter(Config.LOGS_DIR)\n",
+    "        self.train_losses = []\n",
+    "        self.val_losses = []\n",
+    "        self.best_val_loss = float('inf')\n",
+    "        print(f\"Model initialized on device: {self.device}\")\n",
+    "        print(f\"Total parameters: {sum(p.numel() for p in self.model.parameters()):,}\")\n",
+    "    def train_epoch(self, epoch):\n",
+    "        self.model.train()\n",
+    "        total_loss = 0\n",
+    "        num_batches = 0\n",
+    "        progress_bar = tqdm(self.train_loader, desc=f'Epoch {epoch+1}/{Config.EPOCHS}')\n",
+    "        for batch_idx, batch in enumerate(progress_bar):\n",
+    "            images = batch['image'].to(self.device)\n",
+    "            labels = batch['label'].to(self.device)\n",
+    "            self.optimizer.zero_grad()\n",
+    "            logits = self.model(images)\n",
+    "            loss = self.criterion(logits, labels)\n",
+    "            loss.backward()\n",
+    "            torch.nn.utils.clip_grad_norm_(self.model.parameters(), max_norm=1.0)\n",
+    "            self.optimizer.step()\n",
+    "            total_loss += loss.item()\n",
+    "            num_batches += 1\n",
+    "            progress_bar.set_postfix({'Loss': f'{loss.item():.4f}'})\n",
+    "            if batch_idx % 10 == 0:\n",
+    "                self.writer.add_scalar('Train/Loss', loss.item(), epoch * len(self.train_loader) + batch_idx)\n",
+    "        avg_loss = total_loss / num_batches\n",
+    "        self.train_losses.append(avg_loss)\n",
+    "        return avg_loss\n",
+    "    def validate_epoch(self, epoch):\n",
+    "        self.model.eval()\n",
+    "        total_loss = 0\n",
+    "        num_batches = 0\n",
+    "        correct = 0\n",
+    "        total = 0\n",
+    "        with torch.no_grad():\n",
+    "            for batch in tqdm(self.val_loader, desc='Validation'):\n",
+    "                images = batch['image'].to(self.device)\n",
+    "                labels = batch['label'].to(self.device)\n",
+    "                logits = self.model(images)\n",
+    "                loss = self.criterion(logits, labels)\n",
+    "                total_loss += loss.item()\n",
+    "                num_batches += 1\n",
+    "                preds = torch.argmax(logits, dim=1)\n",
+    "                correct += (preds == labels).sum().item()\n",
+    "                total += labels.size(0)\n",
+    "        avg_loss = total_loss / num_batches\n",
+    "        acc = correct / total if total > 0 else 0\n",
+    "        self.val_losses.append(avg_loss)\n",
+    "        self.writer.add_scalar('Val/Loss', avg_loss, epoch)\n",
+    "        self.writer.add_scalar('Val/Accuracy', acc, epoch)\n",
+    "        return avg_loss\n",
+    "    def save_checkpoint(self, epoch, is_best=False):\n",
+    "        checkpoint = {\n",
+    "            'epoch': epoch,\n",
+    "            'model_state_dict': self.model.state_dict(),\n",
+    "            'optimizer_state_dict': self.optimizer.state_dict(),\n",
+    "            'scheduler_state_dict': self.scheduler.state_dict(),\n",
+    "            'train_losses': self.train_losses,\n",
+    "            'val_losses': self.val_losses,\n",
+    "            'best_val_loss': self.best_val_loss,\n",
+    "            'config': Config.__dict__\n",
+    "        }\n",
+    "        checkpoint_path = os.path.join(Config.MODELS_DIR, f'checkpoint_epoch_{epoch}.pt')\n",
+    "        torch.save(checkpoint, checkpoint_path)\n",
+    "        if is_best:\n",
+    "            best_path = os.path.join(Config.MODELS_DIR, 'best_model.pt')\n",
+    "            torch.save(checkpoint, best_path)\n",
+    "            print(f\"Saved best model with validation loss: {self.best_val_loss:.4f}\")\n",
+    "    def train(self):\n",
+    "        print(\"Starting training...\")\n",
+    "        print(f\"Training for {Config.EPOCHS} epochs\")\n",
+    "        print(f\"Learning rate: {self.optimizer.param_groups[0]['lr']}\")\n",
+    "        print(f\"Batch size: {Config.BATCH_SIZE}\")\n",
+    "        for epoch in range(Config.EPOCHS):\n",
+    "            train_loss = self.train_epoch(epoch)\n",
+    "            val_loss = self.validate_epoch(epoch)\n",
+    "            self.scheduler.step()\n",
+    "            is_best = val_loss < self.best_val_loss\n",
+    "            if is_best:\n",
+    "                self.best_val_loss = val_loss\n",
+    "            if (epoch + 1) % 5 == 0 or is_best:\n",
+    "                self.save_checkpoint(epoch, is_best)\n",
+    "            print(f'Epoch {epoch+1}/{Config.EPOCHS}:')\n",
+    "            print(f'  Train Loss: {train_loss:.4f}')\n",
+    "            print(f'  Val Loss: {val_loss:.4f}')\n",
+    "            print(f'  Learning Rate: {self.scheduler.get_last_lr()[0]:.6f}')\n",
+    "            print()\n",
+    "        self.save_checkpoint(Config.EPOCHS - 1, False)\n",
+    "        self.writer.close()\n",
+    "        print(\"Training completed!\")\n",
+    "        return self.model\n",
+    "    def plot_training_history(self):\n",
+    "        plt.figure(figsize=(12, 4))\n",
+    "        plt.subplot(1, 2, 1)\n",
+    "        plt.plot(self.train_losses, label='Train Loss')\n",
+    "        plt.plot(self.val_losses, label='Val Loss')\n",
+    "        plt.title('Training History')\n",
+    "        plt.xlabel('Epoch')\n",
+    "        plt.ylabel('Loss')\n",
+    "        plt.legend()\n",
+    "        plt.grid(True)\n",
+    "        plt.tight_layout()\n",
+    "        plt.savefig(os.path.join(Config.OUTPUT_DIR, 'training_history.png'))\n",
+    "        plt.show()\n",
+    "\n",
+    "def main():\n",
+    "    print(\"=== Section 2: Model Selection and Training ===\")\n",
+    "    train_loader, val_loader = create_data_loaders()\n",
+    "    if train_loader is None or val_loader is None:\n",
+    "        print(\"Failed to load data. Please check data preparation.\")\n",
+    "        return\n",
+    "    model = FaceRecognitionModel(num_classes=Config.NUM_CLASSES, pretrained=Config.PRETRAINED)\n",
+    "    trainer = ModelTrainer(model, train_loader, val_loader)\n",
+    "    trained_model = trainer.train()\n",
+    "    trainer.plot_training_history()\n",
+    "    print(\"Model training completed successfully!\")\n",
+    "    print(f\"Best validation loss: {trainer.best_val_loss:.4f}\")\n",
+    "    print(f\"Model saved to: {Config.MODELS_DIR}\")\n",
+    "\n",
+    "# if __name__ == \"__main__\":\n",
+    "#     main() "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "edd5ad12",
+   "metadata": {
+    "papermill": {
+     "duration": 0.064896,
+     "end_time": "2025-07-28T18:26:10.497979",
+     "exception": false,
+     "start_time": "2025-07-28T18:26:10.433083",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "## Main File"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "4ee6eb1c",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2025-07-28T18:26:10.538840Z",
+     "iopub.status.busy": "2025-07-28T18:26:10.538298Z",
+     "iopub.status.idle": "2025-07-28T18:26:21.258911Z",
+     "shell.execute_reply": "2025-07-28T18:26:21.258144Z"
+    },
+    "papermill": {
+     "duration": 10.742622,
+     "end_time": "2025-07-28T18:26:21.260144",
+     "exception": false,
+     "start_time": "2025-07-28T18:26:10.517522",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "[I 2025-07-28 18:26:10,854] A new study created in memory with name: lr_tuning\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "=== Hyperparameter Tuning: Learning Rate (Optuna) ===\n",
+      "Created data loaders:\n",
+      "  Training: 1 batches\n",
+      "  Validation: 1 batches\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "/tmp/ipykernel_19/2816815780.py:15: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.\n",
+      "  learning_rate = trial.suggest_loguniform('learning_rate', 1e-5, 1e-2)\n",
+      "/usr/local/lib/python3.11/dist-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.\n",
+      "  warnings.warn(\n",
+      "/usr/local/lib/python3.11/dist-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=MobileNet_V2_Weights.IMAGENET1K_V1`. You can also use `weights=MobileNet_V2_Weights.DEFAULT` to get the most up-to-date weights.\n",
+      "  warnings.warn(msg)\n",
+      "Downloading: \"https://download.pytorch.org/models/mobilenet_v2-b0353104.pth\" to /root/.cache/torch/hub/checkpoints/mobilenet_v2-b0353104.pth\n",
+      "100%|██████████| 13.6M/13.6M [00:00<00:00, 156MB/s]\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[INFO] Using default learning rate: 0.001\n",
+      "Model initialized on device: cuda\n",
+      "Total parameters: 2,225,153\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "Epoch 1/50: 100%|██████████| 1/1 [00:00<00:00,  1.37it/s, Loss=0.0000]\n",
+      "Validation: 100%|██████████| 1/1 [00:00<00:00, 21.15it/s]\n",
+      "Epoch 2/50: 100%|██████████| 1/1 [00:00<00:00, 28.63it/s, Loss=0.0000]\n",
+      "Validation: 100%|██████████| 1/1 [00:00<00:00, 164.61it/s]\n",
+      "[I 2025-07-28 18:26:13,124] Trial 0 finished with value: 0.0 and parameters: {'learning_rate': 3.7576650651914184e-05}. Best is trial 0 with value: 0.0.\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Created data loaders:\n",
+      "  Training: 1 batches\n",
+      "  Validation: 1 batches\n",
+      "[INFO] Using default learning rate: 0.001\n",
+      "Model initialized on device: cuda\n",
+      "Total parameters: 2,225,153\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "Epoch 1/50: 100%|██████████| 1/1 [00:00<00:00, 27.27it/s, Loss=0.0000]\n",
+      "Validation: 100%|██████████| 1/1 [00:00<00:00, 151.79it/s]\n",
+      "Epoch 2/50: 100%|██████████| 1/1 [00:00<00:00, 30.56it/s, Loss=0.0000]\n",
+      "Validation: 100%|██████████| 1/1 [00:00<00:00, 151.70it/s]\n",
+      "[I 2025-07-28 18:26:14,021] Trial 1 finished with value: 0.0 and parameters: {'learning_rate': 1.1924861725984841e-05}. Best is trial 0 with value: 0.0.\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Created data loaders:\n",
+      "  Training: 1 batches\n",
+      "  Validation: 1 batches\n",
+      "[INFO] Using default learning rate: 0.001\n",
+      "Model initialized on device: cuda\n",
+      "Total parameters: 2,225,153\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "Epoch 1/50: 100%|██████████| 1/1 [00:00<00:00, 27.62it/s, Loss=0.0000]\n",
+      "Validation: 100%|██████████| 1/1 [00:00<00:00, 148.17it/s]\n",
+      "Epoch 2/50: 100%|██████████| 1/1 [00:00<00:00, 30.87it/s, Loss=0.0000]\n",
+      "Validation: 100%|██████████| 1/1 [00:00<00:00, 165.55it/s]\n",
+      "[I 2025-07-28 18:26:14,917] Trial 2 finished with value: 0.0 and parameters: {'learning_rate': 5.3059060758522855e-05}. Best is trial 0 with value: 0.0.\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Created data loaders:\n",
+      "  Training: 1 batches\n",
+      "  Validation: 1 batches\n",
+      "[INFO] Using default learning rate: 0.001\n",
+      "Model initialized on device: cuda\n",
+      "Total parameters: 2,225,153\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "Epoch 1/50: 100%|██████████| 1/1 [00:00<00:00, 26.63it/s, Loss=0.0000]\n",
+      "Validation: 100%|██████████| 1/1 [00:00<00:00, 137.37it/s]\n",
+      "Epoch 2/50: 100%|██████████| 1/1 [00:00<00:00, 29.12it/s, Loss=0.0000]\n",
+      "Validation: 100%|██████████| 1/1 [00:00<00:00, 134.74it/s]\n",
+      "[I 2025-07-28 18:26:15,815] Trial 3 finished with value: 0.0 and parameters: {'learning_rate': 0.0011896276278862874}. Best is trial 0 with value: 0.0.\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Created data loaders:\n",
+      "  Training: 1 batches\n",
+      "  Validation: 1 batches\n",
+      "[INFO] Using default learning rate: 0.001\n",
+      "Model initialized on device: cuda\n",
+      "Total parameters: 2,225,153\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "Epoch 1/50: 100%|██████████| 1/1 [00:00<00:00, 26.54it/s, Loss=0.0000]\n",
+      "Validation: 100%|██████████| 1/1 [00:00<00:00, 142.28it/s]\n",
+      "Epoch 2/50: 100%|██████████| 1/1 [00:00<00:00, 30.11it/s, Loss=0.0000]\n",
+      "Validation: 100%|██████████| 1/1 [00:00<00:00, 109.16it/s]\n",
+      "[I 2025-07-28 18:26:16,784] Trial 4 finished with value: 0.0 and parameters: {'learning_rate': 0.00820319346287274}. Best is trial 0 with value: 0.0.\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Created data loaders:\n",
+      "  Training: 1 batches\n",
+      "  Validation: 1 batches\n",
+      "[INFO] Using default learning rate: 0.001\n",
+      "Model initialized on device: cuda\n",
+      "Total parameters: 2,225,153\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "Epoch 1/50: 100%|██████████| 1/1 [00:00<00:00, 27.20it/s, Loss=0.0000]\n",
+      "Validation: 100%|██████████| 1/1 [00:00<00:00, 138.56it/s]\n",
+      "Epoch 2/50: 100%|██████████| 1/1 [00:00<00:00, 30.98it/s, Loss=0.0000]\n",
+      "Validation: 100%|██████████| 1/1 [00:00<00:00, 158.71it/s]\n",
+      "[I 2025-07-28 18:26:17,703] Trial 5 finished with value: 0.0 and parameters: {'learning_rate': 0.0003473020930116697}. Best is trial 0 with value: 0.0.\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Created data loaders:\n",
+      "  Training: 1 batches\n",
+      "  Validation: 1 batches\n",
+      "[INFO] Using default learning rate: 0.001\n",
+      "Model initialized on device: cuda\n",
+      "Total parameters: 2,225,153\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "Epoch 1/50: 100%|██████████| 1/1 [00:00<00:00, 27.42it/s, Loss=0.0000]\n",
+      "Validation: 100%|██████████| 1/1 [00:00<00:00, 125.30it/s]\n",
+      "Epoch 2/50: 100%|██████████| 1/1 [00:00<00:00, 30.72it/s, Loss=0.0000]\n",
+      "Validation: 100%|██████████| 1/1 [00:00<00:00, 173.85it/s]\n",
+      "[I 2025-07-28 18:26:18,577] Trial 6 finished with value: 0.0 and parameters: {'learning_rate': 0.0007492424519608716}. Best is trial 0 with value: 0.0.\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Created data loaders:\n",
+      "  Training: 1 batches\n",
+      "  Validation: 1 batches\n",
+      "[INFO] Using default learning rate: 0.001\n",
+      "Model initialized on device: cuda\n",
+      "Total parameters: 2,225,153\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "Epoch 1/50: 100%|██████████| 1/1 [00:00<00:00, 26.97it/s, Loss=0.0000]\n",
+      "Validation: 100%|██████████| 1/1 [00:00<00:00, 148.47it/s]\n",
+      "Epoch 2/50: 100%|██████████| 1/1 [00:00<00:00, 30.38it/s, Loss=0.0000]\n",
+      "Validation: 100%|██████████| 1/1 [00:00<00:00, 163.50it/s]\n",
+      "[I 2025-07-28 18:26:19,458] Trial 7 finished with value: 0.0 and parameters: {'learning_rate': 0.002517905243702451}. Best is trial 0 with value: 0.0.\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Created data loaders:\n",
+      "  Training: 1 batches\n",
+      "  Validation: 1 batches\n",
+      "[INFO] Using default learning rate: 0.001\n",
+      "Model initialized on device: cuda\n",
+      "Total parameters: 2,225,153\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "Epoch 1/50: 100%|██████████| 1/1 [00:00<00:00, 27.29it/s, Loss=0.0000]\n",
+      "Validation: 100%|██████████| 1/1 [00:00<00:00, 147.38it/s]\n",
+      "Epoch 2/50: 100%|██████████| 1/1 [00:00<00:00, 30.85it/s, Loss=0.0000]\n",
+      "Validation: 100%|██████████| 1/1 [00:00<00:00, 158.97it/s]\n",
+      "[I 2025-07-28 18:26:20,368] Trial 8 finished with value: 0.0 and parameters: {'learning_rate': 7.125952812584628e-05}. Best is trial 0 with value: 0.0.\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Created data loaders:\n",
+      "  Training: 1 batches\n",
+      "  Validation: 1 batches\n",
+      "[INFO] Using default learning rate: 0.001\n",
+      "Model initialized on device: cuda\n",
+      "Total parameters: 2,225,153\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "Epoch 1/50: 100%|██████████| 1/1 [00:00<00:00, 26.98it/s, Loss=0.0000]\n",
+      "Validation: 100%|██████████| 1/1 [00:00<00:00, 140.68it/s]\n",
+      "Epoch 2/50: 100%|██████████| 1/1 [00:00<00:00, 30.63it/s, Loss=0.0000]\n",
+      "Validation: 100%|██████████| 1/1 [00:00<00:00, 153.60it/s]\n",
+      "[I 2025-07-28 18:26:21,253] Trial 9 finished with value: 0.0 and parameters: {'learning_rate': 0.0003451996156021189}. Best is trial 0 with value: 0.0.\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "Best trial:\n",
+      "  Value: 0.0\n",
+      "  Params: {'learning_rate': 3.7576650651914184e-05}\n",
+      "Best learning rate saved to ./output/best_learning_rate.txt\n"
+     ]
+    }
+   ],
+   "source": [
+    "\"\"\"\n",
+    "Hyperparameter Tuning Script for Facial Detection System\n",
+    "Uses Optuna to tune the learning rate before main training\n",
+    "\"\"\"\n",
+    "\n",
+    "import os\n",
+    "import optuna\n",
+    "import torch\n",
+    "# from config import Config\n",
+    "# from data_loader_utils import create_data_loaders\n",
+    "# from model_training import FaceRecognitionModel, ModelTrainer\n",
+    "\n",
+    "def objective(trial):\n",
+    "    # Suggest a learning rate in log scale\n",
+    "    learning_rate = trial.suggest_loguniform('learning_rate', 1e-5, 1e-2)\n",
+    "    \n",
+    "    # Load data loaders from saved splits\n",
+    "    train_loader, val_loader = create_data_loaders()\n",
+    "    \n",
+    "    # Use a smaller number of batches for tuning\n",
+    "    train_loader_iter = iter(train_loader)\n",
+    "    val_loader_iter = iter(val_loader)\n",
+    "    small_train_loader = [next(train_loader_iter) for _ in range(min(3, len(train_loader)))]\n",
+    "    small_val_loader = [next(val_loader_iter) for _ in range(min(2, len(val_loader)))]\n",
+    "    \n",
+    "    # Initialize model\n",
+    "    model = FaceRecognitionModel(num_classes=Config.NUM_CLASSES, pretrained=Config.PRETRAINED)\n",
+    "    \n",
+    "    # Trainer with custom learning rate\n",
+    "    trainer = ModelTrainer(model, train_loader, val_loader)\n",
+    "    trainer.optimizer = torch.optim.AdamW(\n",
+    "        model.parameters(),\n",
+    "        lr=learning_rate,\n",
+    "        weight_decay=Config.WEIGHT_DECAY\n",
+    "    )\n",
+    "    \n",
+    "    # Train for a few epochs only\n",
+    "    best_val_loss = float('inf')\n",
+    "    for epoch in range(2):\n",
+    "        trainer.train_loader = small_train_loader\n",
+    "        trainer.val_loader = small_val_loader\n",
+    "        trainer.train_epoch(epoch)\n",
+    "        val_loss = trainer.validate_epoch(epoch)\n",
+    "        if val_loss < best_val_loss:\n",
+    "            best_val_loss = val_loss\n",
+    "    \n",
+    "    return best_val_loss\n",
+    "\n",
+    "def main():\n",
+    "    print(\"=== Hyperparameter Tuning: Learning Rate (Optuna) ===\")\n",
+    "    \n",
+    "    # Create output directory if it doesn't exist\n",
+    "    os.makedirs(Config.OUTPUT_DIR, exist_ok=True)\n",
+    "    \n",
+    "    study = optuna.create_study(direction=\"minimize\", study_name=\"lr_tuning\")\n",
+    "    study.optimize(objective, n_trials=10)\n",
+    "    \n",
+    "    print(\"\\nBest trial:\")\n",
+    "    trial = study.best_trial\n",
+    "    print(f\"  Value: {trial.value}\")\n",
+    "    print(f\"  Params: {trial.params}\")\n",
+    "    \n",
+    "    # Save best learning rate to file\n",
+    "    best_lr_path = os.path.join(Config.OUTPUT_DIR, \"best_learning_rate.txt\")\n",
+    "    with open(best_lr_path, \"w\") as f:\n",
+    "        f.write(str(trial.params['learning_rate']))\n",
+    "    print(f\"Best learning rate saved to {best_lr_path}\")\n",
+    "\n",
+    "if __name__ == \"__main__\":\n",
+    "    main() "
+   ]
+  }
+ ],
+ "metadata": {
+  "kaggle": {
+   "accelerator": "gpu",
+   "dataSources": [
+    {
+     "datasetId": 7959389,
+     "sourceId": 12603149,
+     "sourceType": "datasetVersion"
+    },
+    {
+     "sourceId": 252986254,
+     "sourceType": "kernelVersion"
+    }
+   ],
+   "isGpuEnabled": true,
+   "isInternetEnabled": true,
+   "language": "python",
+   "sourceType": "notebook"
+  },
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.13"
+  },
+  "papermill": {
+   "default_parameters": {},
+   "duration": 114.215516,
+   "end_time": "2025-07-28T18:26:24.878155",
+   "environment_variables": {},
+   "exception": null,
+   "input_path": "__notebook__.ipynb",
+   "output_path": "__notebook__.ipynb",
+   "parameters": {},
+   "start_time": "2025-07-28T18:24:30.662639",
+   "version": "2.6.0"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
