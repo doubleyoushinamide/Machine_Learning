@@ -3,21 +3,21 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "d2512d0e",
+   "id": "a256bc4e",
    "metadata": {
     "_cell_guid": "b1076dfc-b9ad-4769-8c92-a6c4dae69d19",
     "_uuid": "8f2839f25d086af736a60e9eeb907d3b93b6e0e5",
     "execution": {
-     "iopub.execute_input": "2025-07-29T00:06:32.677377Z",
-     "iopub.status.busy": "2025-07-29T00:06:32.677121Z",
-     "iopub.status.idle": "2025-07-29T00:07:44.967349Z",
-     "shell.execute_reply": "2025-07-29T00:07:44.966557Z"
+     "iopub.execute_input": "2025-07-29T01:15:46.273792Z",
+     "iopub.status.busy": "2025-07-29T01:15:46.273556Z",
+     "iopub.status.idle": "2025-07-29T01:17:08.746422Z",
+     "shell.execute_reply": "2025-07-29T01:17:08.745514Z"
     },
     "papermill": {
-     "duration": 72.294813,
-     "end_time": "2025-07-29T00:07:44.968856",
+     "duration": 82.477424,
+     "end_time": "2025-07-29T01:17:08.748180",
      "exception": false,
-     "start_time": "2025-07-29T00:06:32.674043",
+     "start_time": "2025-07-29T01:15:46.270756",
      "status": "completed"
     },
     "tags": []
@@ -27,16 +27,16 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m363.4/363.4 MB\u001b[0m \u001b[31m4.7 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m13.8/13.8 MB\u001b[0m \u001b[31m83.9 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m24.6/24.6 MB\u001b[0m \u001b[31m80.7 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m883.7/883.7 kB\u001b[0m \u001b[31m40.0 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m664.8/664.8 MB\u001b[0m \u001b[31m2.4 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m211.5/211.5 MB\u001b[0m \u001b[31m1.9 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m56.3/56.3 MB\u001b[0m \u001b[31m31.1 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m127.9/127.9 MB\u001b[0m \u001b[31m13.1 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m207.5/207.5 MB\u001b[0m \u001b[31m8.2 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m21.1/21.1 MB\u001b[0m \u001b[31m84.2 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m363.4/363.4 MB\u001b[0m \u001b[31m4.5 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m13.8/13.8 MB\u001b[0m \u001b[31m47.9 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m24.6/24.6 MB\u001b[0m \u001b[31m43.4 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m883.7/883.7 kB\u001b[0m \u001b[31m40.3 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m664.8/664.8 MB\u001b[0m \u001b[31m2.2 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m211.5/211.5 MB\u001b[0m \u001b[31m2.3 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m56.3/56.3 MB\u001b[0m \u001b[31m24.6 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m127.9/127.9 MB\u001b[0m \u001b[31m12.1 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m207.5/207.5 MB\u001b[0m \u001b[31m7.7 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m21.1/21.1 MB\u001b[0m \u001b[31m45.5 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
       "\u001b[?25h"
      ]
     }
@@ -48,19 +48,19 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "6e58d470",
+   "id": "6e012a80",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2025-07-29T00:07:45.012173Z",
-     "iopub.status.busy": "2025-07-29T00:07:45.011872Z",
-     "iopub.status.idle": "2025-07-29T00:07:45.019668Z",
-     "shell.execute_reply": "2025-07-29T00:07:45.018922Z"
+     "iopub.execute_input": "2025-07-29T01:17:08.812426Z",
+     "iopub.status.busy": "2025-07-29T01:17:08.811896Z",
+     "iopub.status.idle": "2025-07-29T01:17:08.819187Z",
+     "shell.execute_reply": "2025-07-29T01:17:08.818650Z"
     },
     "papermill": {
-     "duration": 0.030601,
-     "end_time": "2025-07-29T00:07:45.020955",
+     "duration": 0.040351,
+     "end_time": "2025-07-29T01:17:08.820274",
      "exception": false,
-     "start_time": "2025-07-29T00:07:44.990354",
+     "start_time": "2025-07-29T01:17:08.779923",
      "status": "completed"
     },
     "tags": []
@@ -143,13 +143,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "ed201cf9",
+   "id": "b4db0a51",
    "metadata": {
     "papermill": {
-     "duration": 0.019443,
-     "end_time": "2025-07-29T00:07:45.059849",
+     "duration": 0.030944,
+     "end_time": "2025-07-29T01:17:08.882050",
      "exception": false,
-     "start_time": "2025-07-29T00:07:45.040406",
+     "start_time": "2025-07-29T01:17:08.851106",
      "status": "completed"
     },
     "tags": []
@@ -161,19 +161,19 @@
   {
    "cell_type": "code",
    "execution_count": 3,
-   "id": "f3f2227a",
+   "id": "b42adc5f",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2025-07-29T00:07:45.100286Z",
-     "iopub.status.busy": "2025-07-29T00:07:45.099984Z",
-     "iopub.status.idle": "2025-07-29T00:07:56.396019Z",
-     "shell.execute_reply": "2025-07-29T00:07:56.395029Z"
+     "iopub.execute_input": "2025-07-29T01:17:08.987950Z",
+     "iopub.status.busy": "2025-07-29T01:17:08.987558Z",
+     "iopub.status.idle": "2025-07-29T01:17:23.696005Z",
+     "shell.execute_reply": "2025-07-29T01:17:23.695027Z"
     },
     "papermill": {
-     "duration": 11.318242,
-     "end_time": "2025-07-29T00:07:56.397415",
+     "duration": 14.785031,
+     "end_time": "2025-07-29T01:17:23.697430",
      "exception": false,
-     "start_time": "2025-07-29T00:07:45.079173",
+     "start_time": "2025-07-29T01:17:08.912399",
      "status": "completed"
     },
     "tags": []
@@ -200,7 +200,7 @@
       "Data preparation completed successfully!\n",
       "Testing data loading...\n",
       "Batch shape: torch.Size([16, 3, 160, 160])\n",
-      "Labels: tensor([0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1])\n"
+      "Labels: tensor([0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0])\n"
      ]
     }
    ],
@@ -542,8 +542,8 @@
    "accelerator": "gpu",
    "dataSources": [
     {
-     "datasetId": 7961759,
-     "sourceId": 12604797,
+     "datasetId": 7961995,
+     "sourceId": 12605156,
      "sourceType": "datasetVersion"
     }
    ],
@@ -572,14 +572,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 90.250343,
-   "end_time": "2025-07-29T00:07:58.768473",
+   "duration": 102.800816,
+   "end_time": "2025-07-29T01:17:25.049670",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2025-07-29T00:06:28.518130",
+   "start_time": "2025-07-29T01:15:42.248854",
    "version": "2.6.0"
   }
  },
